@@ -1,0 +1,65 @@
+/************************Overall Layout*/
+.homeContent {
+	display: grid;
+	height: 100%;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+	grid-template-rows: 1fr 1fr 1fr 1fr;
+	gap: 1.5rem;
+
+}
+.homeContent > * {
+	align-self: center;
+	justify-self: center;
+}
+.homeContent > iframe {
+	grid-column: 1 / 6;
+	grid-row: 1 / 3;
+	min-width: 700px;
+	width: 90%;
+	height: 90%;
+	align-self: center;
+	justify-self: center;
+	z-index: -3;
+}
+.homeContent > div {
+	height: 100%;
+	position: relative;
+	grid-column: 1 / 6;
+	grid-row: 3 / 5;
+}
+
+/********************welcome paragraph and image */  
+.homeContent > div {
+	display: grid;
+	width: 85%;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+	grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+	background-color: rgba(250,250,250,0.85);
+	border-top: 3px solid #272c51;
+	align-items: center;
+	justify-items: center;
+	box-shadow: inset 	0 4px 5px -5px #000000;
+	min-height: 1200px;
+}
+.homeContent > div > article {
+	grid-column: 1 / 6;
+	grid-row: 1 / 2;
+	padding-bottom: 1rem;
+}
+
+.homeContent > div > img{
+	grid-column: 2 / 5;
+	grid-row: 2 / 8;
+}
+.homeContent > div > article > h2 {
+	font-size: 3rem;
+	text-align: center;
+	font-family: serif;
+}
+.homeContent > div > article > p {
+	font-size: 2.70rem;
+	text-align: center;
+	font-family: serif;
+	padding-inline: 1.2rem;
+
+}

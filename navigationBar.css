@@ -1,0 +1,156 @@
+@charset "utf-8";
+
+body {
+	margin: 0;
+	padding: 0;
+	overflow-x: hidden;
+	height: 100vh;
+}
+
+/* ------------------------------ Start of Banner ------------------------------ */
+/* ---------- Start of Main Container ---------- */
+.banner {
+	padding-top: 6px;
+	box-shadow: inset 	0 4px 5px -5px #000000;
+	margin-left: 0;
+	margin-right: 0;
+	width: 100%;
+}
+/* ---------- End of Main Container ---------- */
+/* ---------- Start of Images ---------- */
+img#DoE {
+	display: block;
+	height: 175px;
+	width: 175px;
+	margin-left: auto;
+	margin-right: auto;
+}
+/* ---------- End of Images ---------- */
+/* ---------- Start of Columns ---------- */
+.banner > .block {
+	vertical-align: top;
+}
+
+#col-1-4 {
+	width: 24%;
+	display: inline-block;
+	height: 175px;
+}
+
+#col-1-2 {
+	width: 50%;
+	display: inline-block;
+	height: 175px;
+}
+
+#col-1-4-2 {
+	width: 24%;
+	display: inline-block;
+	height: 175px;
+}
+/* ---------- End of Columns ---------- */
+/* ---------- Start of Title ---------- */
+#center {
+	margin-left: 0;
+	margin-right: 0;
+	color: #272c51;
+	font-family: serif;
+	text-align: center;
+}
+
+#center h1 {
+	font-size: 50px;
+}
+
+#center h2 {
+	font-size: 23px;
+}
+
+#right {
+	text-align: center;
+	width: 100%;
+	height: 175px;
+}
+
+#right section {
+	display: flex;
+	height: 175px;
+	justify-content: center;
+	align-items: center;
+}
+
+#donate {
+	width: 65%;
+	background-color: red;
+	list-style-type: none;
+	text-decoration: none;
+	font-family: sans-serif;
+	font-weight: bold;
+	line-height: 55px;
+	font-size: 30px;
+	color: white;
+	border-radius: 6px;
+	border-style: none;
+	position: sticky;
+	top: 0;
+}
+/* ---------- End of Title ---------- */
+/* ------------------------------ End of Banner ------------------------------ */
+/* ------------------------------ Start of Nav ------------------------------ */
+#navBar {
+	width: 100.001%;
+	position: sticky;
+	top: 0;
+}
+
+#navBar ul { 
+	background-color: #272c51;
+	list-style-type: none;
+	width: 100.001%;
+	margin: 0;
+	padding: 0;
+	font-size: 0;
+
+}
+ul li {
+	display: inline-block;
+	width: 20%;
+	margin: 0;
+	padding: 0;
+}
+ul li a {
+	font-family: sans-serif;
+	width: 100%;
+	color: white;
+	text-align: center;
+	font-weight: bold;
+	text-decoration: none;
+	display: inline-block;
+	padding: 15px;
+	background: #272c51;
+	font-size: 18px;
+
+}
+
+/* --- NOTE: Change "active" class to active webpage --- */
+.active {
+	background: #9ca3c7;
+	color: black;
+}
+
+ul li a:hover:not(.active) {
+	background-color: #dbdfef;
+	color: black;
+}
+/* ------------------------------ End of Nav ------------------------------ */
+/* ------------------------------ Start of Article ------------------------------ */
+
+/* ------------------------------ End of Article ------------------------------ */
+/* ------------------------------ Footer ------------------------------------ */
+footer {
+	width: 100%;
+	background: #272c51;
+}
+footer > ul {
+	display: flex;
+}
