@@ -3,8 +3,7 @@
 	display: grid;
 
 	grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-	grid-template-rows: 1fr 1fr 1fr 1fr;
-	gap: 1.5rem;
+	gap: 4rem;
 
 }
 .homeContent > * {
@@ -19,7 +18,7 @@
 	height: clamp(1000px, 69rem, 1500px);
 	align-self: center;
 	justify-self: center;
-	margin-top: 1rem;
+	margin-top: 3rem;
 }
 .homeContent > div {
 	height: 100%;
@@ -40,25 +39,27 @@
 	box-shadow: inset 	0 4px 5px -5px #000000;
 
 }
-.homeContent > div > article {
+.homeContent > div > article { 
 	grid-column: 1 / 6;
 	grid-row: 1 / 2;
-	padding-bottom: 1rem;
 }
 
-.homeContent > div > img{
+.homeContent > div > img{ /*welcome page image of candidate and wife*/
 	grid-column: 2 / 5;
 	grid-row: 2 / 8;
+	object-fit: cover;
 }
-.homeContent > div > article > h2 {
+.homeContent > div > article > h2 { /*Welcome*/
 	font-size: 3rem;
 	text-align: center;
 	font-family: serif;
 }
-.homeContent > div > article > p {
+.homeContent > div > article > p { /*paragraphs*/
 	font-size: 2.70rem;
 	text-align: center;
 	font-family: serif;
 	padding-inline: 1.2rem;
+	text-indent: 40px;
+	
 
 }
