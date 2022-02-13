@@ -1,10 +1,16 @@
 @charset "utf-8";
-
+html {
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	position: relative;
+}
 body {
 	margin: 0;
 	padding: 0;
 	overflow-x: hidden;
-	height: 100vh;
+	min-height: 100%;
+
 }
 
 /* ------------------------------ Start of Banner ------------------------------ */
@@ -101,6 +107,7 @@ img#DoE {
 	width: 100.001%;
 	position: sticky;
 	top: 0;
+	z-index: 30;
 }
 
 #navBar ul { 
@@ -149,8 +156,12 @@ ul li a:hover:not(.active) {
 /* ------------------------------ Footer ------------------------------------ */
 footer {
 	width: 100%;
-	background: #272c51;
+	background-color: #272c51;
+	position: relative;
+	margin-top: auto;
 }
 footer > ul {
 	display: flex;
+	bottom: 0;
+	background-color: #272c51;
 }
