@@ -1,10 +1,8 @@
 /************************Overall Layout*/
 .homeContent {
 	display: grid;
-
 	grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 	gap: 4rem;
-
 }
 .homeContent > * {
 	align-self: center;
@@ -32,12 +30,11 @@
 	display: grid;
 	width: 85%;
 	grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-	background-color: rgba(250,250,250,0.85);
+	background-color: rgba(245,245,245,0.85);
 	border-top: 3px solid #272c51;
 	align-items: center;
 	justify-items: center;
 	box-shadow: inset 	0 4px 5px -5px #000000;
-
 }
 .homeContent > div > article { 
 	grid-column: 1 / 6;
@@ -60,6 +57,10 @@
 	font-family: serif;
 	padding-inline: 1.2rem;
 	text-indent: 40px;
-	
-
+}
+/***************************************************Desktop version*/
+@media only screen and (min-width: 1200px) {
+	.homeContent {
+		grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+	}
 }
