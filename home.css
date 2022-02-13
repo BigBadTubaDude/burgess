@@ -79,6 +79,7 @@
 		/*transform: translate(50%, 0);*/
 	}
 	#welcomeArticle p {
+		padding-left: 3rem;
 	}
 	.homeContent > div > article h2 {
 		order: -2;
