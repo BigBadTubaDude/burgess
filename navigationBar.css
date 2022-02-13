@@ -4,7 +4,7 @@ html {
 	margin: 0;
 	padding: 0;
 	position: relative;
-	overflow-x: hidden;
+
 }
 body {
 	margin: 0;
@@ -104,10 +104,10 @@ img#DoE {
 /* ------------------------------ End of Banner ------------------------------ */
 /* ------------------------------ Start of Nav ------------------------------ */
 #navBar {
-	width: 100.001%;
+	width: 100%;
 	position: sticky;
 	top: 0;
-	z-index: 30;
+	z-index: 300;
 }
 
 #navBar ul { 

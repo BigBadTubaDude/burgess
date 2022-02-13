@@ -72,14 +72,6 @@
 	.navBar {
 		width: 100vw;
 	}
-	.homeContent {
-
-	}
-	.homeContent > iframe {
-	}
-	.homeContent > img {
-
-	}
 	#welcomeArticle {
 		z-index: 100;
 		display: inline-block;
