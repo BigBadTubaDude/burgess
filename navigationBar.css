@@ -160,13 +160,18 @@ ul li a:hover:not(.active) {
 /* ------------------------------ End of Article ------------------------------ */
 /* ------------------------------ Footer ------------------------------------ */
 footer {
-	width: 100%;
-	background-color: #272c51;
+	width: 100vw;
+
 	position: relative;
 	margin-top: auto;
+	height: 3.5rem;
+	display: grid;
+	grid-template-columns:1fr;
+
 }
 footer > ul {
 	display: flex;
-	bottom: 0;
+	justify-content: center;
 	background-color: #272c51;
+	height: 4rem;
 }
