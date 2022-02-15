@@ -66,12 +66,17 @@ img#DoE {
 
 #center h1 {
 	font-size: 50px;
+	margin: 1rem;
 }
 
 #center h2 {
 	font-size: 23px;
+	margin-top: .5rem;
 }
 
+#center h3 {
+	margin:.1rem;
+}
 #right {
 	text-align: center;
 	width: 100%;

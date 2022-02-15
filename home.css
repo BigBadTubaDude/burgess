@@ -2,7 +2,7 @@
 .homeContent {
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-	gap: 1.5rem;
+	gap: 1.5rem; /*change back to 4rem when adding video back*/
 }
 .homeContent > * {
 	align-self: center;
