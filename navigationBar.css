@@ -21,15 +21,18 @@ body {
 	margin-left: 0;
 	margin-right: 0;
 	width: 100%;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+	align-items: center;
+
+	
 }
 /* ---------- End of Main Container ---------- */
 /* ---------- Start of Images ---------- */
-img#DoE {
+img#logo {
 	display: block;
-	height: 175px;
-	width: 175px;
-	margin-left: auto;
-	margin-right: auto;
+	margin: auto;
+	min-width: 250px;
 }
 /* ---------- End of Images ---------- */
 /* ---------- Start of Columns ---------- */
@@ -38,21 +41,17 @@ img#DoE {
 }
 
 #col-1-4 {
-	width: 24%;
-	display: inline-block;
-	height: 175px;
+	grid-column: 1 / 2;
+	margin-left: 1rem;
 }
 
 #col-1-2 {
-	width: 50%;
-	display: inline-block;
-	height: 175px;
+	grid-column: 2 / 5;
 }
 
 #col-1-4-2 {
-	width: 24%;
-	display: inline-block;
-	height: 175px;
+	grid-column: 5 / 6;
+
 }
 /* ---------- End of Columns ---------- */
 /* ---------- Start of Title ---------- */
@@ -102,8 +101,9 @@ img#DoE {
 	color: white;
 	border-radius: 6px;
 	border-style: none;
-	position: sticky;
-	top: 0;
+	padding: 10px;
+	padding-left:20px;
+	padding-right:20px;
 }
 /* ---------- End of Title ---------- */
 /* ------------------------------ End of Banner ------------------------------ */

@@ -14,7 +14,7 @@ note: |
   Use border-box by default, globally.
 category: global
 */
-*, ::before, ::after { box-sizing: border-box; }
+::before, ::after { box-sizing: border-box; }
 
 
 /* @docs
