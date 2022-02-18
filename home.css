@@ -58,6 +58,10 @@
 	font-family: serif;
 	padding-inline: 1.2rem;
 	text-indent: 40px;
+	font-family: nunito-sans,sans-serif;
+	font-weight: 300;
+	line-height: 4rem;
+	font-style: normal;
 }
 #welcomeArticle { /*This allows the picture of Gary to be last in the mobile version and 2nd in the desktop version by changin the element order*/
 	display: flex;
