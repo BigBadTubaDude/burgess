@@ -176,19 +176,21 @@ footer > ul {
 	display: grid;
 	justify-content: center;
 	background-color: #272c51;
-	height: 4rem;
+	height: 6rem;
 	display: grid;
 	grid-template-columns:1fr 1fr 1fr;
 	justify-items: center;
 	padding-left: 0px;
+	align-items: center;
 }
 footer > ul > li{
 	width: 100%;
 	text-decoration: none;
 	list-style-type: none;
 	background-color: #272c51;
+
 }
 footer ul li a {
 	padding-top: 22px;
-
+	font-size: 1.5rem;
 }
