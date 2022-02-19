@@ -38,7 +38,6 @@
 	font-style: normal;	
 }
 .issues {
-
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
 	grid-template-rows: 15rem auto;
@@ -55,7 +54,20 @@
 }
 .card > h3 {
 	padding-left: 3.5rem;
+	font-size: 3rem;
 }
-.issues > div > ul {
+.issues > ul {
 	display: none;
 }
+.card button {
+	border: none;
+}
+.issues ul.show {
+	display: block;
+}
+.upsideDown {
+	transform: scaleY(-1);
+}
+.issue6 div.card h3 { /*fits longer title in with arrow*/
+	display: grid;
+	grid-template-columns: 2fr 1fr;

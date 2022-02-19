@@ -51,9 +51,13 @@
 		</div>
 		<div class="issues issue1">
 			<div class="card">
-				<h3>Academic Excellence</h3>
+				<h3>
+					Academic Excellence
+					<button onclick="academicClick(); academicArrowFlip()" >
+					<img id="academicArrow" class="" src="arrow.png" /></button>
+				</h3>
 			</div>
-			<ul class="dropList">
+			<ul class="dropList" id="academic">
 				<li>Every student should be taught in an atmosphere of rigorous expectations</li>
 				<li>Teachers must be supported in structing an atmosphere to maximize learning</li>
 				<li>Teachers know what is best for students to excel</li>
@@ -63,9 +67,13 @@
 		</div>
 		<div class="issues issue2">
 			<div class="card">
-				<h3>Community Control</h3>
+				<h3>
+					Community Control
+					<button onclick="communityClick(); communityArrowFlip()" >
+					<img id="communityArrow" class="" src="arrow.png" /></button>
+				</h3>
 			</div>
-			<ul class="dropList">
+			<ul class="dropList" id="community">
 				<li>Schools should be locally controlled by the people through their boards of trustees</li>
 				<li>Schools should be welcoming places for parents, guardians and citizens who have an interest in the education of children</li>
 				<li>Schools should engage the community in volunteer programs such as: reading/math/science/technology initiatives, mentoring, and the supervision of students</li>
@@ -74,9 +82,13 @@
 		</div>
 		<div class="issues issue3">
 			<div class="card">
-				<h3>Educator/Teacher Pride</h3>
+				<h3>
+					Educator/Teacher Pride
+					<button onclick="prideClick(); prideArrowFlip()" >
+					<img id="prideArrow" class="" src="arrow.png" /></button>					
+				</h3>
 			</div>
-			<ul class="dropList">
+			<ul class="dropList" id="pride">
 				<li>Pay teachers as the guardians of society</li>
 				<li>Retain teaches in the profession by creating a professional teaching environment</li>
 				<li>Innovation must be expected of, and environments create for teachers to innovate</li>
@@ -86,9 +98,13 @@
 		</div>
 		<div class="issues issue4">
 			<div class="card">
-				<h3>Civil Engagement</h3>
+				<h3>
+					Civil Engagement
+					<button onclick="civilClick(); civilArrowFlip()" >
+					<img id="civilArrow" class="" src="arrow.png" /></button>					
+				</h3>
 			</div>
-			<ul class="dropList">
+			<ul class="dropList" id="civil">
 				<li>Schools should assist students in modeling appropriate social behavior</li>
 				<li>Schools should be places where students learn to interact with one another in a manner which ensures healthy civil relations</li>
 				<li>Schools should ensure the fair and balanced teaching of the history of our region- The South</li>
@@ -96,18 +112,26 @@
 		</div>
 		<div class="issues issue5">
 			<div class="card">
-				<h3>School Funding</h3>
+				<h3>
+					School Funding
+					<button onclick="fundingClick(); fundingArrowFlip()" >
+					<img id="fundingArrow" class="" src="arrow.png" /></button>					
+				</h3>
 			</div>
-			<ul class="dropList">
+			<ul class="dropList" id="funding">
 				<li>Public Dollars should be used by public schools</li>
 				<li>Grants, foundations, and other funding streams must be sought</li>
 			</ul>
 		</div>
 		<div class="issues issue6">
 			<div class="card">
-				<h3>Private, Parochial and Religious Schools</h3>
+				<h3>
+					Private, Parochial and Religious Schools
+					<button onclick="privateClick(); privateArrowFlip()" >
+					<img id="privateArrow" class="" src="arrow.png" /></button>					
+				</h3>
 			</div>
-			<ul class="dropList">
+			<ul class="dropList" id="private">
 				<li>These schools play an important role in our society</li>
 				<li>Money should not be diverted from public schools to fund these schools</li>
 			</ul>
@@ -119,5 +143,109 @@
 
 		</ul>
 	</footer>
+	<script>
+		//academic issue drop down effects
+		function academicClick() {
+			var x = document.getElementById("academic");
+			if (x.className.indexOf("show") == -1) {
+				x.className += " show";
+			} else {
+				x.className = x.className.replace(" show", "");
+			}
+		}
+		function academicArrowFlip() {
+			var x = document.getElementById("academicArrow");
+			if (x.className.indexOf("upsideDown") == -1) {
+				x.className += " upsideDown";
+			} else {
+				x.className = x.className.replace(" upsideDown", "");
+			}
+		}
+		//community issue drop down effects
+		function communityClick() {
+			var x = document.getElementById("community");
+			if (x.className.indexOf("show") == -1) {
+				x.className += " show";
+			} else {
+				x.className = x.className.replace(" show", "");
+			}
+		}
+		function communityArrowFlip() {
+			var x = document.getElementById("communityArrow");
+			if (x.className.indexOf("upsideDown") == -1) {
+				x.className += " upsideDown";
+			} else {
+				x.className = x.className.replace(" upsideDown", "");
+			}
+		}
+		//pride issue drop down effects
+		function prideClick() {
+			var x = document.getElementById("pride");
+			if (x.className.indexOf("show") == -1) {
+				x.className += " show";
+			} else {
+				x.className = x.className.replace(" show", "");
+			}
+		}
+		function prideArrowFlip() {
+			var x = document.getElementById("prideArrow");
+			if (x.className.indexOf("upsideDown") == -1) {
+				x.className += " upsideDown";
+			} else {
+				x.className = x.className.replace(" upsideDown", "");
+			}
+		}
+		//civil issue drop down effects
+		function civilClick() {
+			var x = document.getElementById("civil");
+			if (x.className.indexOf("show") == -1) {
+				x.className += " show";
+			} else {
+				x.className = x.className.replace(" show", "");
+			}
+		}
+		function civilArrowFlip() {
+			var x = document.getElementById("civilArrow");
+			if (x.className.indexOf("upsideDown") == -1) {
+				x.className += " upsideDown";
+			} else {
+				x.className = x.className.replace(" upsideDown", "");
+			}
+		}
+		//funding issue drop down effects
+		function fundingClick() {
+			var x = document.getElementById("funding");
+			if (x.className.indexOf("show") == -1) {
+				x.className += " show";
+			} else {
+				x.className = x.className.replace(" show", "");
+			}
+		}
+		function fundingArrowFlip() {
+			var x = document.getElementById("fundingArrow");
+			if (x.className.indexOf("upsideDown") == -1) {
+				x.className += " upsideDown";
+			} else {
+				x.className = x.className.replace(" upsideDown", "");
+			}
+		}
+		//private issue drop down effects
+		function privateClick() {
+			var x = document.getElementById("private");
+			if (x.className.indexOf("show") == -1) {
+				x.className += " show";
+			} else {
+				x.className = x.className.replace(" show", "");
+			}
+		}
+		function privateArrowFlip() {
+			var x = document.getElementById("privateArrow");
+			if (x.className.indexOf("upsideDown") == -1) {
+				x.className += " upsideDown";
+			} else {
+				x.className = x.className.replace(" upsideDown", "");
+			}
+		}
+	</script>
 </body>
 </html>
