@@ -44,6 +44,7 @@
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
 	grid-template-rows: 11rem auto;
+    align-items: center;
 }
 .dropList {
 	grid-column: 2 / 7;
@@ -82,6 +83,9 @@
 .issue6 div.card h3 { /*fits longer title in with arrow*/
 	display: grid;
 	grid-template-columns: 2fr 1fr;
+}
+div.content > div:last-of-type {
+	margin-bottom: 3rem;
 }
 .arrow {
 
