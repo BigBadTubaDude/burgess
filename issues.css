@@ -43,7 +43,7 @@
 .issues {
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-	grid-template-rows: 15rem auto;
+	grid-template-rows: 11rem auto;
 }
 .dropList {
 	grid-column: 2 / 7;
