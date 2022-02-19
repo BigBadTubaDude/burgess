@@ -55,12 +55,14 @@
 .card > h3 {
 	padding-left: 3.5rem;
 	font-size: 3rem;
+
 }
 .issues > ul {
 	display: none;
 }
 .card button {
 	border: none;
+	background-color: rgb(236,236,236);
 }
 .issues ul.show {
 	display: block;
@@ -71,3 +73,7 @@
 .issue6 div.card h3 { /*fits longer title in with arrow*/
 	display: grid;
 	grid-template-columns: 2fr 1fr;
+}
+.arrow {
+
+}
