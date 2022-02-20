@@ -24,7 +24,7 @@
 	grid-column: 1 / 5;
 	margin: auto;
 	display: grid;
-	border-bottom: 3px solid #272c51;
+	/*border-bottom: 3px solid #272c51;*/
 	justify-content: center;
 	transform: scale(1.4, 1.4);
 }
