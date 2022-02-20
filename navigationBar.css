@@ -29,6 +29,7 @@ body {
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 	align-items: center;
+	justify-items: center;
 
 	
 }
@@ -121,7 +122,7 @@ img#logo {
 	z-index: 300;
 }
 
-#navBar ul { 
+#navBar ul#mainNav { 
 	background-color: #272c51;
 	list-style-type: none;
 	width: 100.001%;
@@ -130,13 +131,13 @@ img#logo {
 	font-size: 0;
 
 }
-nav#navBar ul li {
+nav#navBar ul#mainNav li {
 	display: inline-block;
 	width: 20%;
 	margin: 0;
 	padding: 0;
 }
-nav#navBar ul li a, footer ul li a {
+nav#navBar ul#mainNav li a, footer ul li a {
 	font-family: sans-serif;
 	width: 100%;
 	color: white;
@@ -148,7 +149,45 @@ nav#navBar ul li a, footer ul li a {
 	background: #272c51;
 	font-size: 18px;
 }
+/******************************Social dropdown*/
+.socialLogos {
+	display: grid;
+	grid-template-columns: 94vw 1fr;
+	grid-template-rows: auto;
+	position: absolute;
+    justify-content: end;
+	list-style-type: none;
+	width: 100%;
+	padding: 0;
+	margin: 0;
 
+
+}
+
+.socialLogos li {
+	background: #272c51;
+	display: none;
+}
+.socialLogos li img{
+	
+}
+.tiktok {
+	grid-column: -1 / -1;
+	grid-row: 4 / 5;
+	border-radius: 0 0 0 7px;
+}
+.facebook {
+	grid-column: -1 / -1;
+	grid-row: 1 / 2;
+}
+.twitter {
+	grid-column: -1 / -1;
+	grid-row: 3 / 4;
+}
+.instagram {
+	grid-column: -1 / -1;
+	grid-row: 2 / 3;
+}
 
 /* --- NOTE: Change "active" class to active webpage --- */
 .active {
