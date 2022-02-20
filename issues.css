@@ -88,7 +88,7 @@ div.content > div:last-of-type {
 	margin-bottom: 3rem;
 }
 div.content > div:last-of-type > ul {
-	margin-top: 1.5rem;
+	margin-top: min(2rem);
 }
 .arrow {
 
