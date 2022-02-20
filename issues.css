@@ -11,7 +11,6 @@
 }
 .titleCard {
 	grid-column: 1 / -1;
-
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
 	align-items: center;
@@ -81,7 +80,6 @@
 	line-height: 3rem;
 	margin-top: 1rem;
 	font-size: clamp(1rem, 1.7rem, 2.5rem);
-	
 }
 .card button {
 	border: none;
@@ -100,11 +98,13 @@
 div.content > div:last-of-type {
 	margin-bottom: -1.5rem;
 }
-div.content > div:last-of-type > ul {
-	margin-top: min(2rem);
+.issues > ul > li:first-of-type {
+	margin-top: min(3rem);
 }
+
 .signature {
 	display: grid;
 	justify-items: center;
 	margin-top: -2.7rem;
+	z-index: -1;
 }
