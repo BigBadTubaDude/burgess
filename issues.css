@@ -105,6 +105,6 @@ div.content > div:last-of-type {
 .signature {
 	display: grid;
 	justify-items: center;
-	margin-top: -2.7rem;
+	margin-top: -4.7rem;
 	z-index: -1;
 }
