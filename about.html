@@ -47,16 +47,10 @@
 		</ul>
 		<ul id="socialDropdown" class="socialLogos">
 			<li class="facebook"><a><img src="facebookLogo.png" /></a></li>
-			<li class="instagram"><a><img src="instaLogo.png" /></a></li>
+			<li class="instagram"><a href="https://www.instagram.com/burgessforeducation/"><img src="instaLogo.png" /></a></li>
 			<li class="twitter"><a><img src="twitterLogo.png" /></a></li>
 			<li class="tiktok"><a><img src="tiktokLogo.png" /></a></li>
 		</ul>
-		<!-- Scroll Indicator -->
-		<div class="scroller">
-			<div class="progress" id="progressBar">
-			</div>
-		</div>
-		<!-- END -->
 	</nav>
 	
 	
@@ -214,5 +208,15 @@
 			<li><a href="#">Volunteer!</a></li>
 		</ul>
 	</footer>
+	<script>
+		function showSocial() {
+			var x = document.getElementById("socialDropdown");
+			if (x.className.indexOf("show") == -1) {
+				x.className += " show";
+			} else {
+				x.className = x.className.replace(" show", "");
+			}
+		}
+	</script>
 </body>
 </html>
