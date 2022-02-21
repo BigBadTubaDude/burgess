@@ -1,0 +1,49 @@
+div#container {
+	width: 100%;
+	background-color: #F7F7F7;
+}
+
+div.content {
+	width: 75%;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: white;
+	border: 1px solid #EDEDEC;
+	padding: 25px;
+	font-family: nunito-sans,sans-serif;
+}
+
+div.content h1 {
+	font-size: 60px;
+	font-weight: 700;
+    line-height: 63px;
+	text-align: center;
+	padding-top: auto;
+	padding-bottom: auto;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+div.content h2 {
+	font-size: 28px;
+	color: #1f1f1f;
+	font-weight: bold;
+	text-align: center;
+}
+
+p {
+	font-size: 1em;
+	line-height: 30px;
+	color: #444;
+	margin: 0 0 1em;
+}
+
+#mainPhoto {
+	width: 25%; 
+	height: auto;
+}
+
+.content, .content h2, p, #mainPhoto {
+	padding-left: 1.67em;
+	padding-right: 1.67em;
+}
