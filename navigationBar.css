@@ -149,10 +149,18 @@ nav#navBar ul#mainNav li a, footer ul li a {
 	background: #272c51;
 	font-size: 18px;
 }
+#mainNav > li:hover { /*hover and other effects for the main nav bar links*/
+	filter: brightness(125%);
+}
+#mainNav > li:active, 
+#mainNav > li:focus {
+	filter: brightness(70%);
+} 
+
 /******************************Social dropdown*/
 .socialLogos {
 	display: grid;
-	grid-template-columns: 94vw 1fr;
+	grid-template-columns: 91.5vw 1fr;
 	grid-template-rows: auto;
 	position: absolute;
     justify-content: end;
@@ -160,8 +168,12 @@ nav#navBar ul#mainNav li a, footer ul li a {
 	width: 100%;
 	padding: 0;
 	margin: 0;
-
-
+}
+@media only screen and (max-width: 1600px) {
+	.socialLogos li{
+		height: 10rem;
+		width: 10rem;
+	}
 }
 
 .socialLogos li {
@@ -174,7 +186,7 @@ nav#navBar ul#mainNav li a, footer ul li a {
 .tiktok {
 	grid-column: -1 / -1;
 	grid-row: 4 / 5;
-	border-radius: 0 0 0 7px;
+	border-radius: 0 0 7px 7px;
 }
 .facebook {
 	grid-column: -1 / -1;
@@ -189,15 +201,23 @@ nav#navBar ul#mainNav li a, footer ul li a {
 	grid-row: 2 / 3;
 }
 
+nav#navBar ul.show li{
+	display: block;
+}
+nav#navBar > ul > li:hover { /*hover and other effects for the main nav bar links*/
+	filter: brightness(125%);
+}
+nav#navBar > ul > li:active, 
+nav#navBar > li:focus {
+	filter: brightness(70%);
+
 /* --- NOTE: Change "active" class to active webpage --- */
 .active {
 	background: #9ca3c7;
 	color: black;
 }
 
-ul li a:hover:not(.active) {
-	background-color: #dbdfef;
-	color: black;
+
 }
 /* ------------------------------ End of Nav ------------------------------ */
 /* ------------------------------ Start of Article ------------------------------ */
@@ -225,13 +245,21 @@ footer > ul {
 	align-items: center;
 }
 footer > ul > li{
-	width: 100%;
+	display: flex;
 	text-decoration: none;
 	list-style-type: none;
 	background-color: #272c51;
-
+	height: 100%;
+	align-items: center;
 }
 footer ul li a {
 	padding-top: 22px;
 	font-size: 1.5rem;
+}
+footer > ul > li:hover { /*hover and other effects for the main nav bar links*/
+	filter: brightness(125%);
+}
+footer > ul > li:active, 
+footer > li:focus {
+	filter: brightness(70%);
 }

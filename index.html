@@ -39,16 +39,15 @@
 			<li><a href="issues.html">Issues</a></li>
 			<li><a href="#mediaRelease">Media Release</a></li>
 			<li><a href="http://bit.ly/3uDxz0D">Volunteer</a></li>
-			<li><a href="#contact">Social Media</a></li>
+			<li onclick="showSocial()"><a href="#contact">Social Media</a></li>
 		</ul>
-		<ul class="socialLogos">
+		<ul id="socialDropdown" class="socialLogos">
 			<li class="facebook"><a><img src="facebookLogo.png" /></a></li>
 			<li class="instagram"><a><img src="instaLogo.png" /></a></li>
 			<li class="twitter"><a><img src="twitterLogo.png" /></a></li>
 			<li class="tiktok"><a><img src="tiktokLogo.png" /></a></li>
 		</ul>
 	</nav>
-	
 	<div class="homeContent">
 		<!--<iframe src="https://www.youtube-nocookie.com/embed/x_Q6ulfrNlQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>	-->	
 		<div class="welcomeText">
@@ -83,5 +82,15 @@
 			<li><a href="#">Volunteer!</a></li>
 		</ul>
 	</footer>
+	<script>
+		function showSocial() {
+			var x = document.getElementById("socialDropdown");
+			if (x.className.indexOf("show") == -1) {
+				x.className += " show";
+			} else {
+				x.className = x.className.replace(" show", "");
+			}
+		}
+	</script>
 </body>
 </html>
