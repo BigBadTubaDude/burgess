@@ -1,14 +1,13 @@
 .content {
 	display: grid;
 	margin-top: 3.6rem;
-	gap: 4.6rem;
+	gap: 3rem;
 }
 /************************************************Title cards*/
 .titleCardGrid {
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-	grid-template-rows: 1fr 5rem;
-	grid-template-rows: 4rem;
+	grid-template-rows: 1fr 6rem;
 }
 .titleCard {
 	grid-column: 1 / -1;
@@ -21,18 +20,19 @@
 	display: grid;
 	justify-content: center;
 }
-.sloganCard > img {
+.sloganCard > h2 {
 	grid-column: 1 / 5;
 	margin: auto;
 	display: grid;
 	/*border-bottom: 3px solid #272c51;*/
 	justify-content: center;
-	transform: scale(1.4, 1.4);
+	font-size: 4rem;
+	font-family: 'Cookie', cursive;
 }
 .sloganCard { /*white space with handwritten slogan*/
 
 	padding: 0rem;
-	margin-top: 3rem;
+	margin-top: auto;
 	grid-row: 2 / -1;
 	grid-column: 1 / -1;
 	align-items: center;
