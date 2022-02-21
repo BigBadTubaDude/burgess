@@ -186,7 +186,7 @@ nav#navBar ul#mainNav li a, footer ul li a {
 .tiktok {
 	grid-column: -1 / -1;
 	grid-row: 4 / 5;
-	border-radius: 0 0 7px 7px;
+	border-radius: 0 0 9px 9px;
 }
 .facebook {
 	grid-column: -1 / -1;
