@@ -38,7 +38,6 @@
 	align-items: center;
 }
 .issuesTitle {
-	border-right: 3px solid #272c51;
 	background-color: rgb(236,236,236);
 	grid-column: 1 / -1;
 	height: 100%;
@@ -82,7 +81,7 @@
 .issues > ul > li {
 	line-height: 3rem;
 	margin-top: 1rem;
-	font-size: clamp(1rem, 1.7rem, 2.5rem);
+	/*font-size: clamp(1rem, 1.7rem, 2.5rem);*/
 }
 .card button {
 	border: none;
@@ -95,19 +94,22 @@
 	transform: scaleY(-1);
 }
 .issue6 div.card h3 { /*fits longer title in with arrow*/
-	display: grid;
 	grid-template-columns: 2fr 1fr;
 }
 div.content > div:last-of-type {
 	margin-bottom: -1.5rem;
 }
 .issues > ul > li:first-of-type {
-	margin-top: min(3rem);
+	margin-top: min(2rem);
 }
-
 .signature {
 	display: grid;
 	justify-items: center;
 	margin-top: -4.7rem;
 	z-index: -1;
+}
+/***************************font stuff*/
+ul.dropList > li {
+	font-family: nunito-sans,sans-serif;
+	font-size: 2.7rem;
 }
