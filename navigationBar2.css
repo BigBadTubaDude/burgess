@@ -311,7 +311,7 @@ footer > ul {
 	grid-template-columns:1fr 1fr 1fr;
 	justify-items: center;
 	align-items: center;
-	box-shadow: 0 -3px 6px rgb(45 62 80 / 90%);
+	box-shadow: 0 -1px 5px rgb(45 62 80 / 90%);
 	background-color: #272c51;
 	list-style-type: none;
 	margin: 0;
@@ -341,7 +341,7 @@ footer ul li a {
 	font-size: 1.1rem;
 }
 
-/*footer::before {
+footer::before {
 	content: '';
     position: absolute;
     width: 100%;
@@ -350,7 +350,7 @@ footer ul li a {
 				#f4f8fa 14px,#ff5e37 14px,#ff5e37 21px,#f4f8fa 21px,#f4f8fa 28px);
 }
 
- footer > ul > li:hover {
+/* footer > ul > li:hover {
 	filter: brightness(125%);
 }
 footer > ul > li:active, 

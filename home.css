@@ -7,6 +7,7 @@
 .homeContent > * {
 	align-self: center;
 	justify-self: center;
+	z-index: 2;
 }
 .homeContent > iframe {
 	grid-column: 1 / 6;
