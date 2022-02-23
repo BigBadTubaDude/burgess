@@ -1,0 +1,359 @@
+@charset "utf-8";
+html {
+	/* position: relative;
+	scroll-behavior: smooth;
+	width: 100%; */
+	
+	scroll-behavior: smooth;
+	width: 100%;
+	overflow-x: hidden;
+}
+html, body{
+    /* width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;  */
+	
+	width: 100%;
+    margin: 0px;
+    padding: 0px;
+	min-height: 100vh;
+}
+body {
+	/* min-height: 100vh;
+	display: flex;
+	flex-direction: column; */
+	
+	position: relative;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+}
+
+/* ------------------------------ Start of Banner ------------------------------ */
+/* ---------- Start of Main Container ---------- */
+.banner {
+	/* box-shadow: inset 	0 4px 5px -5px #000000;
+	margin-left: 0;
+	margin-right: 0;
+	width: 100%;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+	align-items: center;
+	justify-items: center; */
+
+	margin-left: 0;
+	margin-right: 0;
+	margin-top: 0;
+	width: 100%;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+	align-items: center;
+}
+/* ---------- End of Main Container ---------- */
+/* ---------- Start of Images ---------- */
+img#logo {
+	/* display: block;
+	margin: auto;
+	min-width: 250px; */
+	
+	display: block;
+	margin: auto;
+	width: 100%;
+	height: auto;
+}
+/* ---------- End of Images ---------- */
+/* ---------- Start of Columns ---------- */
+.banner > .block {
+	vertical-align: top;
+}
+
+#col-1-4 {
+	grid-column: 1 / 2;
+	margin-left: 1rem;
+}
+
+#col-1-2 {
+	grid-column: 2 / 5;
+}
+
+#col-1-4-2 {
+	grid-column: 5 / 6;
+}
+/* ---------- End of Columns ---------- */
+/* ---------- Start of Title ---------- */
+#center {
+	margin-left: 0;
+	margin-right: 0;
+	color: #272c51;
+	font-family: serif;
+	text-align: center;
+	
+	/* Suggestion: #0f4e86 (brighter color */)
+}
+
+#center h1 {
+	font-size: 50px;
+	margin: 1rem;
+}
+
+#center h2 {
+	font-size: 23px;
+	margin-top: .5rem;
+}
+
+#center h3 {
+	margin:.1rem;
+}
+#right {
+	text-align: center;
+	width: 100%;
+	height: 175px;
+}
+
+#right section {
+	display: flex;
+	height: 175px;
+	justify-content: center;
+	align-items: center;
+}
+
+#donate {
+	/* width: 65%;
+	background-color: red;
+	list-style-type: none;
+	text-decoration: none;
+	font-family: sans-serif;
+	font-weight: bold;
+	line-height: 55px;
+	font-size: 30px;
+	color: white;
+	border-radius: 6px;
+	border-style: none;
+	padding: 10px;
+	padding-left:20px;
+	padding-right:30px; */
+	
+	background-color: red;
+	list-style-type: none;
+	text-decoration: none;
+	font-family: sans-serif;
+	font-size: 2rem;
+	color: white;
+	border-radius: 3px;
+	border-style: none;
+	padding: 1rem 1.845rem;
+	font-weight: 600;
+}
+/* ---------- End of Title ---------- */
+/* ------------------------------ End of Banner ------------------------------ */
+/* ------------------------------ Start of Nav ------------------------------ */
+#navBar {
+	/* width: 100%;
+	position: sticky;
+	top: 0;
+	z-index: 300; */
+	
+	/* Highly suggest keeping this change */
+	/* Removes the small whitespace that is above the sticky when scrolling */
+	width: 100%;
+	position: sticky;
+	top: -0.01px;
+	z-index: 3;
+}
+
+#navBar ul#mainNav { 
+	/* background-color: #272c51;
+	list-style-type: none;
+	width: 100.001%;
+	margin: 0;
+	padding: 0;
+	font-size: 0; */
+	
+	background-color: #272c51;
+	box-shadow: 0 3px 6px rgb(45 62 80 / 90%);
+	list-style-type: none;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	font-size: 0;
+}
+nav#navBar ul#mainNav li {
+	display: inline-block;
+	width: 20%;
+	margin: 0;
+	padding: 0;
+}
+nav#navBar ul#mainNav li a, footer ul li a {
+	/* font-family: sans-serif;
+	width: 100%;
+	color: white;
+	text-align: center;
+	font-weight: bold;
+	text-decoration: none;
+	display: inline-block;
+	padding: 15px;
+	background: #272c51;
+	font-size: 18px; */
+	
+	font-family: sans-serif;
+	width: 100%;
+	color: white;
+	text-align: center;
+	font-weight: bold;
+	text-decoration: none;
+	display: inline-block;
+	padding-top: 1em;
+	padding-bottom: 1em;
+	background-color: #272c51;
+	font-size: 15px;
+}
+#mainNav > li:hover { /*hover and other effects for the main nav bar links*/
+	filter: brightness(125%);
+}
+#mainNav > li:active, 
+#mainNav > li:focus {
+	filter: brightness(70%);
+} 
+
+/******************************Social dropdown*/
+.socialLogos {
+	display: grid;
+	grid-template-columns: 91.5vw 1fr;
+	grid-template-rows: auto;
+	position: absolute;
+    justify-content: end;
+	list-style-type: none;
+	width: 100%;
+	padding: 0;
+	margin: 0;
+}
+@media only screen and (max-width: 1600px) {
+	.socialLogos li{
+		height: 10rem;
+		width: 10rem;
+	}
+}
+
+.socialLogos li {
+	background: #272c51;
+	display: none;
+}
+.socialLogos li img{
+	
+}
+.tiktok {
+	grid-column: -1 / -1;
+	grid-row: 4 / 5;
+	border-radius: 0 0 9px 9px;
+}
+.facebook {
+	grid-column: -1 / -1;
+	grid-row: 1 / 2;
+}
+.twitter {
+	grid-column: -1 / -1;
+	grid-row: 3 / 4;
+}
+.instagram {
+	grid-column: -1 / -1;
+	grid-row: 2 / 3;
+}
+
+nav#navBar ul.show li{
+	display: block;
+}
+nav#navBar > ul > li:hover { /*hover and other effects for the main nav bar links*/
+	filter: brightness(125%);
+}
+nav#navBar > ul > li:active, 
+nav#navBar > li:focus {
+	filter: brightness(70%);
+
+/* --- NOTE: Change "active" class to active webpage --- */
+.active {
+	background: #9ca3c7;
+	color: black;
+}
+
+
+}
+/* ------------------------------ End of Nav ------------------------------ */
+/* ------------------------------ Start of Article ------------------------------ */
+
+/* ------------------------------ End of Article ------------------------------ */
+/* ------------------------------ Footer ------------------------------------ */
+footer {
+	/* width: 100vw;
+	margin-top: auto;
+	height: 3.5rem; */
+
+	width: 100vw;
+	margin-top: auto;
+	margin-bottom: 0px;
+}
+
+footer > ul {
+	/* display: grid;
+	margin-bottom: 0px;
+	justify-content: center;
+	background-color: #272c51;
+	height: 6rem;
+	display: grid;
+	grid-template-columns:1fr 1fr 1fr;
+	justify-items: center;
+	padding-left: 0px;
+	align-items: center; */
+	
+	justify-content: center;
+	display: grid;
+	grid-template-columns:1fr 1fr 1fr;
+	justify-items: center;
+	align-items: center;
+	box-shadow: 0 -3px 6px rgb(45 62 80 / 90%);
+	background-color: #272c51;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	font-size: 0;
+}
+
+footer > ul > li{
+	/* display: flex;
+	text-decoration: none;
+	list-style-type: none;
+	background-color: #272c51;
+	height: 100%;
+	align-items: center; */
+	
+	width: 100%;
+	text-decoration: none;
+	list-style-type: none;
+	background-color: #272c51;
+}
+
+footer ul li a {
+	/* padding-top: 22px;
+	font-size: 1.5rem; */
+	
+	padding-top: 22px;
+	font-size: 1.1rem;
+}
+
+/*footer::before {
+	content: '';
+    position: absolute;
+    width: 100%;
+    height: 5px;
+    background: repeating-linear-gradient(135deg,#3498db, #3498db 7px, #f4f8fa 7px, 
+				#f4f8fa 14px,#ff5e37 14px,#ff5e37 21px,#f4f8fa 21px,#f4f8fa 28px);
+}
+
+ footer > ul > li:hover {
+	filter: brightness(125%);
+}
+footer > ul > li:active, 
+footer > li:focus {
+	filter: brightness(70%);
+} */

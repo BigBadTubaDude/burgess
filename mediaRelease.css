@@ -1,0 +1,17 @@
+body {
+	height: 100vh;
+}
+.content {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	height: 100%;
+}
+
+iframe {
+	grid-column: 1 / 2;
+	border: none;
+}
+.previous {
+	background-color: rgb(236, 236, 236);
+	grid-column: 2 / 3;
+}
