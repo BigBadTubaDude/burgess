@@ -68,6 +68,12 @@ iframe {
 }
 @media only screen and (max-width: 1200px) {
 	.content {
-		display: block;
+		display: flex;
+		    flex-direction: column;
+			align-items: flex-start;
 	}
+	.previous {
+		order: -1;
+	}
+	
 }
