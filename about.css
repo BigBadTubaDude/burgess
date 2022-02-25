@@ -1,20 +1,22 @@
 div#container {
 	width: 100%;
-	background-color: #F7F7F7;
+	background-color: white;
 }
 
 div.content {
-	width: 75%;
+	width: 80%;
+	padding-left: 1.5em;
+	padding-right: 1.5em;
 	margin-left: auto;
 	margin-right: auto;
-	background-color: white;
+	background-color: #F7F7F7;
 	border: 1px solid #EDEDEC;
-	padding: 25px;
+	/* padding: 25px; */
 	font-family: nunito-sans,sans-serif;
 }
 
 div.content h1 {
-	font-size: 60px;
+	font-size: 3.75rem;
 	font-weight: 700;
     line-height: 63px;
 	text-align: center;
@@ -25,25 +27,62 @@ div.content h1 {
 }
 
 div.content h2 {
-	font-size: 28px;
+	font-size: 1.75rem;
 	color: #1f1f1f;
 	font-weight: bold;
 	text-align: center;
 }
 
 p {
-	font-size: 1em;
-	line-height: 30px;
+	font-size: 1.5rem;
+	line-height: 2.75rem;
 	color: #444;
 	margin: 0 0 1em;
+	padding-inline: 1.2rem;
+	margin-top: 2rem;
+	margin-bottom: 2rem;
+	text-align: justify;
 }
 
 #mainPhoto {
 	width: 25%; 
 	height: auto;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 30px;
+	border-left: 1px solid #e4e4e4;
+	border-top: 1px solid white;
+	border-right: 2px solid black;
+	border-bottom: 2px solid black;
+	box-shadow: 5px 5px 10px;
 }
 
-.content, .content h2, p, #mainPhoto {
-	padding-left: 1.67em;
-	padding-right: 1.67em;
+#babyPhoto {
+	width: 100%;
+	height: auto;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#bANDk {
+	float: right;
+	width: 30%;
+	height: auto;
+	padding-left: 1.5em;
+	padding-right: 1.5em;
+	filter: saturate(150%);
+}
+
+.content, .content h2, p {
+	/* padding-left: 1.67em;
+	padding-right: 1.67em; */
+/* 	width: 90% */
+	margin-left: auto;
+	margin-right: auto;
+}
+
+figure figcaption {
+	font-family: 'Times New Roman', serif;
+	text-align: center;
+	color: grey;
 }
