@@ -41,11 +41,12 @@ p {
 	padding-inline: 1.2rem;
 	margin-top: 2rem;
 	margin-bottom: 2rem;
-	text-align: justify;
+	/* text-align: justify; */
+	font-style: normal;
 }
 
 #mainPhoto {
-	width: 25%; 
+	width: 50%; 
 	height: auto;
 	margin-left: auto;
 	margin-right: auto;
@@ -57,32 +58,97 @@ p {
 	box-shadow: 5px 5px 10px;
 }
 
-#babyPhoto {
+/* figure {
+	border: 1px solid black;
+} */
+
+figure figcaption {
+	font-size: 25px;
+	font-family: 'Times New Roman', serif;
+	text-align: center;
+	color: grey;
+}
+
+#bChurchFamily {
 	width: 100%;
 	height: auto;
 	margin-left: auto;
 	margin-right: auto;
 }
 
-#bANDk {
-	float: right;
-	width: 30%;
+#pastor {
+	float: left;
+	width: 40%;
 	height: auto;
-	padding-left: 1.5em;
-	padding-right: 1.5em;
-	filter: saturate(150%);
 }
 
-.content, .content h2, p {
-	/* padding-left: 1.67em;
-	padding-right: 1.67em; */
-/* 	width: 90% */
+#bDinner {
+	clear: both;
+	width: 100%;
+	height: auto;
 	margin-left: auto;
 	margin-right: auto;
 }
 
-figure figcaption {
-	font-family: 'Times New Roman', serif;
-	text-align: center;
-	color: grey;
+#babyPhoto {
+	clear: both;
+	width: 100%;
+	height: auto;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#love {
+	float: right;
+	width: 40%;
+	height: auto;
+}
+
+#fit {
+	float: left;
+	width: 40%;
+	height: auto;
+}
+
+#bSpeech2 {
+	clear: both;
+	width: 100%;
+	height: auto;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#speech {
+	float: right;
+	width: 40%;
+	height: auto;
+}
+
+#bWife {
+	clear: both;
+	width: 100%;
+	height: auto;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#bWife2 {
+	clear: both;
+	width: 100%;
+	height: auto;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#young {
+	clear: both;
+	width: 50%;
+	height: auto;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.content, .content h2, p {
+	margin-left: auto;
+	margin-right: auto;
 }
