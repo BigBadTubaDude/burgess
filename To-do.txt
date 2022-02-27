@@ -1,3 +1,6 @@
 mobile nav
 donate hover and active
 change nav and footer to text hover effects
+link socials remove tiktok for now
+make social media menus disapear when clicking elsewhere
+make border radius last of type

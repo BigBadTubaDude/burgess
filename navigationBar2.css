@@ -179,7 +179,6 @@ img#logo {
 	margin: 0;
 	padding: 0;
 	font-size: 0;
-
 	display: flex;
 
 }
@@ -221,6 +220,42 @@ nav#navBar ul#mainNav li a, footer ul li a {
 #mainNav > li:focus {
 	filter: brightness(70%);
 } 
+.mobileButtons, #mediaDropdown {
+	display: none;
+}
+@media only screen and (max-width: 1200px) {
+	nav ul#mainNav li {
+		display: none;
+	}
+	#navBar ul .mobileButtons, #mediaDropdown {
+		display: block;
+
+	}
+	#navBar ul#mediaDropdown {
+		bottom: 81%;
+		position: absolute;
+		list-style-type: none;
+		text-decoration: none;
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		width: 100%;
+	}
+	#navBar ul#mediaDropdown li{
+		background-color: #272c51;
+		box-shadow: 0 3px 6px rgb(45 62 80 / 90%);
+		
+	}
+	#navBar ul#mediaDropdown li a {
+		font-size: 1.65rem;
+	    padding-top: 1em;
+		padding-bottom: 1em;
+	}
+	
+	nav#navBar ul#mainNav li a {
+		font-size: 1.65rem;
+	}
+	
+}
 
 /******************************Social dropdown*/
 .socialLogos {
