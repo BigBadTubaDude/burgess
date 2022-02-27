@@ -251,7 +251,7 @@ nav#navBar ul#mainNav li a, footer ul li a {
 		padding-bottom: 1em;
 	}
 	
-	nav#navBar ul#mainNav li a {
+	nav#navBar ul#mainNav li a { /*main nav buttons. This makes them bigger in mobile*/
 		font-size: 1.65rem;
 	}
 	
