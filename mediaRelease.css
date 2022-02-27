@@ -8,7 +8,8 @@ body {
 	height: fit-content;
 	scroll-snap-type: y mandatory;
 	align-items: center;
-	justify-items: start;
+	justify-items: center;
+
 }
 
 iframe {
@@ -17,6 +18,12 @@ iframe {
 	border: none;
 	padding: .75rem;
 	z-index: 1;
+	border-left: 1px solid #e4e4e4;
+	border-top: 1px solid white;
+	border-right: 2px solid black;
+	border-bottom: 2px solid black;
+	box-shadow: 3px 3px 6px;
+
 
 
 }

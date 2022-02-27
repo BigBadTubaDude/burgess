@@ -1,0 +1,3 @@
+mobile nav
+donate hover and active
+change nav and footer to text hover effects
