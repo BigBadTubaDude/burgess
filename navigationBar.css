@@ -119,8 +119,8 @@ img#logo {
 	width: 100%;
 	position: sticky;
 	top: 0;
-
 	z-index: 300;
+	display: flex;
 }
 
 #navBar ul#mainNav { 
