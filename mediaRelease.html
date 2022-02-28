@@ -60,7 +60,7 @@
 		</div>-->
 	</div>
 	<footer>
-		<ul>
+		<ul id="footerNav">
 			<li><a href="https://iwillvote.com/">How to Vote</a></li>
 			<li><a href="https://linktr.ee/burgessforeducation">Follow Us On Social Media</a></li>
 			<li><a href="http://bit.ly/3uDxz0D">Volunteer!</a></li>
@@ -75,6 +75,14 @@
 				x.className = x.className.replace(" show", "");
 			}
 		}
+		function showMobile() {
+			var x = document.getElementById("mediaDropdown");
+			if (x.className.indexOf("show") == -1 {
+				x.className += " show";
+			} else {
+				x.className = x.className.replace(" show", "");
+			}
+		} 
 	</script>
 </body>
 </html>

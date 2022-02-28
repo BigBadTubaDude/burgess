@@ -48,6 +48,7 @@ body {
 	margin-top: 0;
 	width: 100%;
 	display: grid;
+	position: relative;
 	grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 	align-items: center;
 }
@@ -146,6 +147,13 @@ img#logo {
 	padding: 1rem 1.845rem;
 	font-weight: 600;
 }
+/* -----DONATE hover effects */
+#donate:hover {
+	background-color: rgb(255,60,69);
+}
+#donate:active, #dontate:focus {
+	filter: brightness(85%);
+}
 /* ---------- End of Title ---------- */
 /* ------------------------------ End of Banner ------------------------------ */
 /* ------------------------------ Start of Nav ------------------------------ */
@@ -160,7 +168,7 @@ img#logo {
 	width: 100%;
 	position: sticky;
 	top: -0.01px;
-	z-index: 3;
+	z-index: 4;
 
 }
 
@@ -189,7 +197,7 @@ nav#navBar ul#mainNav li {
 	padding: 0;
 	
 }
-nav#navBar ul#mainNav li a, footer ul li a {
+#mainNav li a, footer ul li a {
 	/* font-family: sans-serif;
 	width: 100%;
 	color: white;
@@ -203,7 +211,7 @@ nav#navBar ul#mainNav li a, footer ul li a {
 	
 	font-family: sans-serif;
 	width: 100%;
-	color: white;
+	color: rgb(234,234,234);
 	text-align: center;
 	font-weight: bold;
 	text-decoration: none;
@@ -213,46 +221,73 @@ nav#navBar ul#mainNav li a, footer ul li a {
 	background-color: #272c51;
 	font-size: 15px;
 }
-#mainNav > li:hover { /*hover and other effects for the main nav bar links*/
-	filter: brightness(125%);
+ul#mainNav li:hover > a,  footer > ul#footerNav > li:hover a { /*hover and other effects for the main nav bar links*/
+	color: rgb(255, 255, 255);
 }
-#mainNav > li:active, 
-#mainNav > li:focus {
-	filter: brightness(70%);
+ul#mainNav > li:active a, 
+ul#mainNav > li:focus a, 
+footer ul#footerNav > li:active a, 
+footer ul#footerNav > li:focus a,
+#mediaDropdown > li:active a,
+#mediaDropdown > li:focus a{
+	color: rgb(150,150,175);
 } 
 .mobileButtons, #mediaDropdown {
 	display: none;
 }
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 1000px) {
 	nav ul#mainNav li {
 		display: none;
 	}
-	#navBar ul .mobileButtons, #mediaDropdown {
+	#navBar ul .mobileButtons {
 		display: block;
+	}
+	#mediaDropdown {
+		top: 100%;
+		left: 0%;
+		position: absolute;
+		margin: 0;
+		display: none;
+		grid-template-rows: 1fr 1fr 1fr 1fr;
+		width: 100%;
+		padding: 0;
+		z-index: 3;
 
 	}
-	#navBar ul#mediaDropdown {
-		bottom: 81%;
-		position: absolute;
-		list-style-type: none;
-		text-decoration: none;
-		display: grid;
-		grid-template-columns: 1fr 1fr;
-		width: 100%;
-	}
-	#navBar ul#mediaDropdown li{
+	ul#mediaDropdown li{
 		background-color: #272c51;
 		box-shadow: 0 3px 6px rgb(45 62 80 / 90%);
-		
-	}
-	#navBar ul#mediaDropdown li a {
-		font-size: 1.65rem;
+		text-align: center;
 	    padding-top: 1em;
 		padding-bottom: 1em;
+		list-style-type: none;
+		text-decoration: none;
+		width: 20%;
+		padding-top: 2.5rem;
+		padding-bottom: 2.5rem;
+		padding-left: 2rem;
+		padding-right: 2rem;
+		z-index:1;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+
+	}
+	ul#mediaDropdown li:last-of-type {
+		border-radius: 0px 0px 10px 0px;
+	}
+	ul#mediaDropdown li a {
+		font-size: 3rem;
+		list-style-type: none;
+		text-decoration: none;
+		color: rgb(234,234,234);
+		font-weight: bold;
 	}
 	
 	nav#navBar ul#mainNav li a { /*main nav buttons. This makes them bigger in mobile*/
 		font-size: 1.65rem;
+		list-style-type: none;
+		text-decoration: none;
 	}
 	
 }
@@ -283,10 +318,12 @@ nav#navBar ul#mainNav li a, footer ul li a {
 .socialLogos li img{
 	
 }
+.socialLogos li:last-of-type {
+	border-radius: 0 0 0px 10px;
+}
 .tiktok {
 	grid-column: -1 / -1;
 	grid-row: 4 / 5;
-	border-radius: 0 0 9px 9px;
 }
 .facebook {
 	grid-column: -1 / -1;
@@ -301,15 +338,9 @@ nav#navBar ul#mainNav li a, footer ul li a {
 	grid-row: 2 / 3;
 }
 
-nav#navBar ul.show li{
+nav#navBar ul.show li, ul#mediaDropdown.show{
 	display: block;
 }
-nav#navBar > ul > li:hover { /*hover and other effects for the main nav bar links*/
-	filter: brightness(125%);
-}
-nav#navBar > ul > li:active, 
-nav#navBar > li:focus {
-	filter: brightness(70%);
 
 /* --- NOTE: Change "active" class to active webpage --- */
 .active {

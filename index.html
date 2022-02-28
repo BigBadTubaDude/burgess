@@ -31,12 +31,13 @@
 				</section>
 			</div>	
 		</div>
+
 	</header>
 	
 	<nav id="navBar">
 		<ul id="mainNav">
-			<li class="mobileButtons"><a>Menu</a></li> <!-- these appear when screen is under 1200px-->
-			<li class="mobileButtons"><a></a></li>
+			<li onclick="showMobile()" class="mobileButtons"><a>Menu</a></li> <!-- these appear when screen is under 1200px-->
+			<li class="mobileButtons"><a></a></li> <!-- emply space in mobile version-->
 			<li onclick="showSocial()" class="mobileButtons"><a>Social Media</a></li>
 			<li><a href="about.html" title="Main Menu">About</a></li> <!--these are for the decktop version-->
 			<li><a href="issues.html">Issues</a></li>
@@ -50,12 +51,13 @@
 			<li class="twitter"><a><img src="twitterLogo.png" /></a></li>
 			<!--<li class="tiktok"><a><img src="tiktokLogo.png" /></a></li>-->
 		</ul>
-		<ul id="mediaDropdown">
+		<ul id="mediaDropdown" class="">
 			<li><a href="about.html" title="Main Menu">About</a></li>
 			<li><a href="issues.html">Issues</a></li>
 			<li><a href="mediaRelease.html">Media Release</a></li>
 			<li><a href="http://bit.ly/3uDxz0D">Volunteer</a></li>
 		</ul>
+
 	</nav>
 	<div class="homeContent">
 		<!--<iframe src="https://www.youtube-nocookie.com/embed/x_Q6ulfrNlQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>	-->	
@@ -85,7 +87,7 @@
 
 	</div>
 	<footer>
-		<ul>
+		<ul id="footerNav">
 			<li><a href="https://iwillvote.com/">How to Vote</a></li>
 			<li><a href="https://linktr.ee/burgessforeducation">Follow Us On Social Media</a></li>
 			<li><a href="http://bit.ly/3uDxz0D">Volunteer!</a></li>
@@ -94,6 +96,14 @@
 	<script>
 		function showSocial() {
 			var x = document.getElementById("socialDropdown");
+			if (x.className.indexOf("show") == -1) {
+				x.className += " show";
+			} else {
+				x.className = x.className.replace(" show", "");
+			}
+		}
+		function showMobile() {
+			var x = document.getElementById("mediaDropdown");
 			if (x.className.indexOf("show") == -1) {
 				x.className += " show";
 			} else {
