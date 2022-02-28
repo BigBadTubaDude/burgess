@@ -39,10 +39,12 @@
 			</div>	
 		</div>
 	</header>
-	
-	<nav id="navBar">
+		<nav id="navBar">
 		<ul id="mainNav">
-			<li><a href="about.html" title="Main Menu">About</a></li>
+			<li onclick="showMobile()" class="mobileButtons"><a>Menu</a></li> <!-- these appear when screen is under 1200px-->
+			<li class="mobileButtons"><a></a></li> <!-- emply space in mobile version-->
+			<li onclick="showSocial()" class="mobileButtons"><a>Social Media</a></li>
+			<li><a href="about.html" title="Main Menu">About</a></li> <!--these are for the decktop version-->
 			<li><a href="issues.html">Issues</a></li>
 			<li><a href="mediaRelease.html">Media Release</a></li>
 			<li><a href="http://bit.ly/3uDxz0D">Volunteer</a></li>
@@ -54,6 +56,12 @@
 			<li class="twitter"><a href="https://twitter.com/BforSCEd"><img src="twitterLogo.png" /></a></li>
 			<!--<li class="tiktok"><a><img src="tiktokLogo.png" /></a></li>-->
 		</ul>
+		<ul id="mediaDropdown" class="">
+			<li><a href="about.html" title="Main Menu">About</a></li>
+			<li><a href="issues.html">Issues</a></li>
+			<li><a href="mediaRelease.html">Media Release</a></li>
+			<li><a href="http://bit.ly/3uDxz0D">Volunteer</a></li>
+		</ul>
 		<!-- Scroll Indicator -->
 		<div class="scroller">
 			<div class="progress" id="progressBar">
@@ -61,6 +69,7 @@
 		</div>
 		<!-- END -->
 	</nav>
+
 	
 	
 	
