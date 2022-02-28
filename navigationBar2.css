@@ -18,7 +18,7 @@ html, body{
 	width: 100%;
     margin: 0px;
     padding: 0px;
-	min-height: 100vh;
+	min-height: 100%;
 }
 body {
 	/* min-height: 100vh;
@@ -29,6 +29,7 @@ body {
 	height: 100%;
 	display: flex;
 	flex-direction: column;
+	min-height: 100%;
 }
 
 /* ------------------------------ Start of Banner ------------------------------ */
@@ -356,12 +357,10 @@ nav#navBar ul.show li, ul#mediaDropdown.show{
 /* ------------------------------ End of Article ------------------------------ */
 /* ------------------------------ Footer ------------------------------------ */
 footer {
-	/* width: 100vw;
-	margin-top: auto;
-	height: 3.5rem; */
-
 	width: 100vw;
 	margin-top: auto;
+	/*height: 3.5rem; */
+
 	margin-bottom: 0px;
 }
 
