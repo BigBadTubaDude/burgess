@@ -148,6 +148,7 @@ img#logo {
 	border-style: none;
 	padding: 1rem 1.845rem;
 	font-weight: 600;
+	transform: translate(-.5rem, 0px);
 }
 /* -----DONATE hover effects */
 #donate:hover {
