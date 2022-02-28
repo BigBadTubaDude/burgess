@@ -62,8 +62,9 @@ img#logo {
 	
 	display: block;
 	margin: auto;
-	width: 100%;
+	width: 166%;
 	height: auto;
+	max-width: 461px;
 }
 /* ---------- End of Images ---------- */
 /* ---------- Start of Columns ---------- */
