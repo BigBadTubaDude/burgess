@@ -238,62 +238,7 @@ footer ul#footerNav > li:focus a,
 .mobileButtons, #mediaDropdown {
 	display: none;
 }
-@media only screen and (max-width: 1000px) {
-	nav ul#mainNav li {
-		display: none;
-	}
-	#navBar ul .mobileButtons {
-		display: block;
-	}
-	#mediaDropdown {
-		top: 100%;
-		left: 0%;
-		position: absolute;
-		margin: 0;
-		display: none;
-		grid-template-rows: 1fr 1fr 1fr 1fr;
-		width: 100%;
-		padding: 0;
-		z-index: 3;
 
-	}
-	ul#mediaDropdown li{
-		background-color: #272c51;
-		box-shadow: 0 3px 6px rgb(45 62 80 / 90%);
-		text-align: center;
-	    padding-top: 1em;
-		padding-bottom: 1em;
-		list-style-type: none;
-		text-decoration: none;
-		width: 20%;
-		padding-top: 2.5rem;
-		padding-bottom: 2.5rem;
-		padding-left: 2rem;
-		padding-right: 2rem;
-		z-index:1;
-		display: flex;
-		align-items: center;
-		justify-content: center;
-
-	}
-	ul#mediaDropdown li:last-of-type {
-		border-radius: 0px 0px 10px 0px;
-	}
-	ul#mediaDropdown li a {
-		font-size: 3rem;
-		list-style-type: none;
-		text-decoration: none;
-		color: rgb(234,234,234);
-		font-weight: bold;
-	}
-	
-	nav#navBar ul#mainNav li a { /*main nav buttons. This makes them bigger in mobile*/
-		font-size: 1.65rem;
-		list-style-type: none;
-		text-decoration: none;
-	}
-	
-}
 
 /******************************Social dropdown*/
 .socialLogos {
@@ -429,3 +374,64 @@ footer > ul > li:active,
 footer > li:focus {
 	filter: brightness(70%);
 } */
+@media only screen and (max-width: 1000px) {
+	nav ul#mainNav li {
+		display: none;
+	}
+	#navBar ul .mobileButtons {
+		display: block;
+	}
+	#mediaDropdown {
+		top: 100%;
+		left: 0%;
+		position: absolute;
+		margin: 0;
+		display: none;
+		grid-template-rows: 1fr 1fr 1fr 1fr;
+		width: 100%;
+		padding: 0;
+		z-index: 3;
+
+	}
+	ul#mediaDropdown li{
+		background-color: #272c51;
+		box-shadow: 0 3px 6px rgb(45 62 80 / 90%);
+		text-align: center;
+	    padding-top: 1em;
+		padding-bottom: 1em;
+		list-style-type: none;
+		text-decoration: none;
+		width: 20%;
+		padding-top: 2.5rem;
+		padding-bottom: 2.5rem;
+		padding-left: 2rem;
+		padding-right: 2rem;
+		z-index:1;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+
+	}
+	ul#mediaDropdown li:last-of-type {
+		border-radius: 0px 0px 10px 0px;
+	}
+	ul#mediaDropdown li a {
+		font-size: 3rem;
+		list-style-type: none;
+		text-decoration: none;
+		color: rgb(234,234,234);
+		font-weight: bold;
+	}
+	
+	nav#navBar ul#mainNav li a { /*main nav buttons. This makes them bigger in mobile*/
+		font-size: 1.65rem;
+		list-style-type: none;
+		text-decoration: none;
+	}
+	footer#footerNav ul li a {
+		font-size: 1.65rem;
+	}
+	#logo {
+		transform: translate(-.19rem, 0px);
+	}
+}
