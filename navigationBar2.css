@@ -432,6 +432,6 @@ footer > li:focus {
 		font-size: 1.65rem;
 	}
 	#logo {
-		transform: translate(-.3rem, 0px);
+		transform: translate(-.5rem, 0px);
 	}
 }
