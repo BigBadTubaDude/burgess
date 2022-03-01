@@ -306,7 +306,7 @@ nav#navBar ul.show li, ul#mediaDropdown.show{
 footer {
 	width: 100vw;
 	margin-top: auto;
-	height: 3.5rem
+	/*height: 3.5rem;*/
 	margin-bottom: 0px;
 }
 
@@ -337,23 +337,21 @@ footer > ul {
 
 footer > ul > li{
 	/* display: flex;
-	text-decoration: none;
-	list-style-type: none;
+
 	background-color: #272c51;
 	height: 100%;
 	align-items: center; */
-	
-	width: 100%;
 	text-decoration: none;
 	list-style-type: none;
+	
+	width: 100%;
 	background-color: #272c51;
 }
 
 footer ul li a {
-	/* padding-top: 22px;
-	font-size: 1.5rem; */
+	 padding-top: 22px
+	/*font-size: 1.5rem;*/
 	
-	padding-top: 22px;
 	font-size: 1.1rem;
 }
 
@@ -429,6 +427,9 @@ footer > li:focus {
 	}
 	footer#footerNav ul li a {
 		font-size: 1.65rem;
+	}
+	footer ul li a {
+		font-size: 1.6rem;
 	}
 	#logo {
 		transform: translate(-1.5rem, 0px);
