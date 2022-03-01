@@ -306,8 +306,7 @@ nav#navBar ul.show li, ul#mediaDropdown.show{
 footer {
 	width: 100vw;
 	margin-top: auto;
-	/*height: 3.5rem; */
-
+	height: 3.5rem
 	margin-bottom: 0px;
 }
 
@@ -432,6 +431,6 @@ footer > li:focus {
 		font-size: 1.65rem;
 	}
 	#logo {
-		transform: translate(-.5rem, 0px);
+		transform: translate(-1.5rem, 0px);
 	}
 }
