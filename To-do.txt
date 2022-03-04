@@ -1,5 +1,3 @@
-
-
-
-
+Slide in effect for issues + add color
 make social media menus disapear when clicking elsewhere
+in page volunteer form
