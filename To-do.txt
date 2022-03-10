@@ -1,3 +1,9 @@
+Expand donate button
+add to footer
+add slide show
+add column at a glance
+
+
 Slide in effect for issues + add color
 make social media menus disapear when clicking elsewhere
 in page volunteer form

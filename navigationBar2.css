@@ -433,5 +433,8 @@ footer > li:focus {
 	}
 	#logo {
 		transform: translate(-1.5rem, 0px);
+	}	
+	#donate {
+		transform: translate(-1.5rem, 0px);
 	}
 }
