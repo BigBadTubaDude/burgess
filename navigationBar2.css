@@ -223,7 +223,7 @@ nav#navBar ul#mainNav li {
 	text-decoration: none;
 	display: inline-block;
 	padding-top: 1em;
-	padding-bottom: 1em;
+	padding-bottom: .75rem;
 	background-color: #272c51;
 	font-size: 15px;
 	transition:all .1s;
@@ -314,7 +314,7 @@ footer {
 	margin-bottom: 0px;
 }
 
-footer > ul {
+footer > ul#footerNav {
 	/* display: grid;
 	margin-bottom: 0px;
 	justify-content: center;
@@ -337,6 +337,7 @@ footer > ul {
 	margin: 0;
 	padding: 0;
 	font-size: 0;
+	scroll-snap-type: y mandatory;
 }
 
 footer > ul > li{
@@ -358,6 +359,7 @@ footer ul li a {
 	font-size: 1.1rem;
 }
 
+
 footer::before {
 	content: '';
     position: absolute;
@@ -365,6 +367,23 @@ footer::before {
     height: 5px;
     background: repeating-linear-gradient(135deg,#3498db, #3498db 7px, #f4f8fa 7px, 
 				#f4f8fa 14px,#ff5e37 14px,#ff5e37 21px,#f4f8fa 21px,#f4f8fa 28px);
+}
+#subFooter {
+	background-color: #272c51;
+	display: grid;
+	justify-items: center;
+	padding-right:1rem;
+}
+#subFooter p {
+	margin: 0px;
+	padding-top: 0rem;
+	padding-bottom: 1rem;
+	color: rgb(220,220,220);
+	width: fit-content;
+	min-width: 50px;
+	text-align: center;
+	font-size: 1rem;
+	line-height: 1.1rem;
 }
 
 /* footer > ul > li:hover {
@@ -422,7 +441,6 @@ footer > li:focus {
 		color: rgb(234,234,234);
 		font-weight: bold;
 	}
-	
 	nav#navBar ul#mainNav li a { /*main nav buttons. This makes them bigger in mobile*/
 		font-size: 1.65rem;
 		list-style-type: none;
@@ -440,4 +458,5 @@ footer > li:focus {
 	#donate {
 		transform: translate(-1.5rem, 0px);
 	}
+	
 }
