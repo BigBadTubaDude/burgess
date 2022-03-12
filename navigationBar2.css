@@ -149,13 +149,16 @@ img#logo {
 	padding: 1rem 1.845rem;
 	font-weight: 600;
 	transform: translate(-.5rem, 0px);
+	transition:all .05s linear;
 }
 /* -----DONATE hover effects */
 #donate:hover {
-	background-color: rgb(255,60,69);
+	background-color: rgb(255,55,64);
+	padding: 1.05rem 1.9rem;
 }
-#donate:active, #dontate:focus {
-	filter: brightness(85%);
+#donate:active {
+	filter: brightness(88%);
+	padding: .85rem 1.7rem;
 }
 /* ---------- End of Title ---------- */
 /* ------------------------------ End of Banner ------------------------------ */
@@ -223,6 +226,7 @@ nav#navBar ul#mainNav li {
 	padding-bottom: 1em;
 	background-color: #272c51;
 	font-size: 15px;
+	transition:all .1s;
 }
 ul#mainNav li:hover > a,  footer > ul#footerNav > li:hover a { /*hover and other effects for the main nav bar links*/
 	color: rgb(255, 255, 255);
@@ -349,9 +353,8 @@ footer > ul > li{
 }
 
 footer ul li a {
-	 padding-top: 22px
+	 padding-top: 22px;
 	/*font-size: 1.5rem;*/
-	
 	font-size: 1.1rem;
 }
 
