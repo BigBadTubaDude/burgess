@@ -9,7 +9,8 @@
 	<link href="reset.css" rel="stylesheet" />
 	<link href="navigationBar2.css" rel="stylesheet" />
 	<link href="home.css" rel="stylesheet" />
-	<link rel="stylesheet" href="https://use.typekit.net/isy4zkm.css">
+	<link rel="stylesheet" href="https://use.typekit.net/isy4zkm.css">	
+	<link rel="stylesheet" href="slideshow.css">
 </head>
 
 <body>
@@ -79,7 +80,78 @@
 				<p>
 					How can you help?  By making a donation to the campaign and by voting for me.  Again, thanks for visiting the website.					
 				</p>
-				
+				<!-- -------------------------------------------------- START Slideshow-------------------------------------------------- -->
+				<!--<div class="slideshow-container">
+					<div class ="theSlides faded">
+						<img class="images" src="slideshow\ss1.jpg" alt=""/>
+					</div>
+									
+					<div class ="theSlides faded">
+						<img class="images" src="slideshow\ss2.jpg" alt=""/>
+					</div>
+									
+					<div class ="theSlides faded">
+						<img class="images" src="slideshow\ss3.jpg" alt=""/>
+					</div>
+					<div class ="theSlides faded">
+						<img class="images" src="slideshow\ss4.jpg" alt=""/>
+					</div>
+									
+					<div class ="theSlides faded">
+						<img class="images" src="slideshow\ss5.jpg" alt=""/>
+					</div>
+									
+					<div class ="theSlides faded">
+						<img class="images" src="slideshow\ss6.jpg" alt=""/>
+					</div>
+					<div class ="theSlides faded">
+						<img class="images" src="slideshow\ss7.jpg" alt=""/>
+					</div>
+									
+					<div class ="theSlides faded">
+						<img class="images" src="slideshow\ss8.jpg" alt=""/>
+					</div>
+									
+					<div class ="theSlides faded">
+						<img class="images" src="slideshow\ss9.jpg" alt=""/>
+					</div>
+					<div class ="theSlides faded">
+						<img class="images" src="slideshow\ss10.jpg" alt=""/>
+					</div>
+									
+					<div class ="theSlides faded">
+						<img class="images" src="slideshow\ss11.jpg" alt=""/>
+					</div>
+									
+					<div class ="theSlides faded">
+						<img class="images" src="slideshow\ss12.jpg" alt=""/>
+					</div>
+					<div class ="theSlides faded">
+						<img class="images" src="slideshow\ss13.jpg" alt=""/>
+					</div>	
+					<!-- Buttons -->
+				<!--		<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+						<a class="next" onclick="plusSlides(1)">&#10095;</a>
+				</div>
+				<br>
+
+				<!-- The dots/circles -->
+				<!-- <div id="dot">
+					<span class="dot" onclick="currentSlide(1)"></span>
+					<span class="dot" onclick="currentSlide(2)"></span>
+					<span class="dot" onclick="currentSlide(3)"></span>
+					<span class="dot" onclick="currentSlide(4)"></span>
+					<span class="dot" onclick="currentSlide(5)"></span>
+					<span class="dot" onclick="currentSlide(6)"></span>
+					<span class="dot" onclick="currentSlide(7)"></span>
+					<span class="dot" onclick="currentSlide(8)"></span>
+					<span class="dot" onclick="currentSlide(9)"></span>
+					<span class="dot" onclick="currentSlide(10)"></span>
+					<span class="dot" onclick="currentSlide(11)"></span>
+					<span class="dot" onclick="currentSlide(12)"></span>
+					<span class="dot" onclick="currentSlide(13)"></span>
+				</div> 
+<!-- -------------------------------------------------- END Slideshow -------------------------------------------------- -->
 			</article>
 			
 		</div>
@@ -94,6 +166,7 @@
 		<div id="subFooter">
 				<p>PO Box 291198 </br> Columbia, SC 29229 </p>
 		</div>
+
 	</footer>
 	<script>
 		function showSocial() {
@@ -111,6 +184,34 @@
 			} else {
 				x.className = x.className.replace(" show", "");
 			}
+		}
+		var slideIndex = 1;
+		showSlides(slideIndex);
+
+		// Next/previous controls
+		function plusSlides(n) {
+		  showSlides(slideIndex += n);
+		}
+
+		// Thumbnail image controls
+		function currentSlide(n) {
+		  showSlides(slideIndex = n);
+		}
+
+		function showSlides(n) {
+		  var i;
+		  var slides = document.getElementsByClassName("theSlides");
+		  var dots = document.getElementsByClassName("dot");
+		  if (n > slides.length) {slideIndex = 1}
+		  if (n < 1) {slideIndex = slides.length}
+		  for (i = 0; i < slides.length; i++) {
+			  slides[i].style.display = "none";
+		  }
+		  for (i = 0; i < dots.length; i++) {
+			  dots[i].className = dots[i].className.replace(" active", "");
+		  }
+		  slides[slideIndex-1].style.display = "block";
+		  dots[slideIndex-1].className += " active";
 		}
 	</script>
 </body>
