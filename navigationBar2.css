@@ -229,7 +229,7 @@ nav#navBar ul#mainNav li {
 	transition:all .1s;
 }
 ul#mainNav li:hover > a,  footer > ul#footerNav > li:hover a { /*hover and other effects for the main nav bar links*/
-	color: rgb(255, 232, 232);
+	color: rgb(255, 239, 239);
 }
 ul#mainNav > li:active a, 
 ul#mainNav > li:focus a, 
