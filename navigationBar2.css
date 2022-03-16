@@ -229,7 +229,7 @@ nav#navBar ul#mainNav li {
 	transition:all .1s;
 }
 ul#mainNav li:hover > a,  footer > ul#footerNav > li:hover a { /*hover and other effects for the main nav bar links*/
-	color: rgb(255, 239, 239);
+	color: rgb(255, 239 , 239);
 }
 ul#mainNav > li:active a, 
 ul#mainNav > li:focus a, 
@@ -374,16 +374,18 @@ footer::before {
 	justify-items: center;
 	padding-right:1rem;
 }
-#subFooter p {
+div#subFooter p {
 	margin: 0px;
 	padding-top: 0rem;
 	padding-bottom: 1rem;
 	color: rgb(220,220,220);
-	width: fit-content;
+	width: 33%;
+	max-width: 600px;
 	min-width: 50px;
 	text-align: center;
-	font-size: 1rem;
+	font-size: 16px;
 	line-height: 1.1rem;
+	padding-inline: 0px;
 }
 
 /* footer > ul > li:hover {
@@ -458,5 +460,6 @@ footer > li:focus {
 	#donate {
 		transform: translate(-1.5rem, 0px);
 	}
+
 	
 }
