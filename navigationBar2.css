@@ -225,7 +225,7 @@ nav#navBar ul#mainNav li {
 	padding-top: 1em;
 	padding-bottom: .75rem;
 	background-color: #272c51;
-	font-size: 15px;
+	font-size: 1.1rem;
 	transition:all .1s;
 }
 ul#mainNav li:hover > a,  footer > ul#footerNav > li:hover a { /*hover and other effects for the main nav bar links*/
@@ -355,8 +355,6 @@ footer > ul > li{
 
 footer ul li a {
 	 padding-top: 22px;
-	/*font-size: 1.5rem;*/
-	font-size: 1.1rem;
 }
 
 
