@@ -1,0 +1,302 @@
+<!doctype html>
+<html>
+<head>
+	<title>Dr. Gary Burgess | State Superintendent Campaign</title>
+	<meta charset="utf-8" />
+	<meta charset="viewport" content="width=device-width, initial-scale=1.0">
+
+	
+	<!-- Style Sheets -->
+	<link href="reset.css" rel="stylesheet" />
+	<link href="navigationBar2.css" rel="stylesheet" />
+	<link href="issues.css" rel="stylesheet" />
+	<link rel="stylesheet" href="https://use.typekit.net/isy4zkm.css">
+	
+</head>
+
+<body>
+	<header class="banner">
+		<a href="index.html"class="block" id="col-1-4">
+			<img id="logo" src="logo.png"/>
+		</a>
+		<div class="block" id="col-1-2">
+			<div id="center">
+				<h1>Dr. Gary Burgess</h1>
+				<h3>for <br/> South Carolina</h3>
+				<h2>State Superintendent of Education</h2>
+			</div>
+		</div>
+		<div class="block" id="col-1-4-2">
+			<div id="right">
+				<section>
+					<a id="donate" href="https://secure.actblue.com/donate/drbforsc">DONATE</a>
+				</section>
+			</div>	
+		</div>
+	</header>
+	
+	<nav id="navBar">
+		<ul id="mainNav">
+			<li onclick="showMobile()" class="mobileButtons"><a>Menu</a></li> <!-- these appear when screen is under 1200px-->
+			<li class="mobileButtons"><a href="http://bit.ly/3uDxz0D">Volunteer</a></li> 
+			<li onclick="showSocial()" class="mobileButtons"><a>More</a></li>
+			<li><a href="about.html" title="Main Menu">About</a></li> <!--these are for the decktop version-->
+			<li><a href="issues.html">Beliefs</a></li>
+			<li><a href="mediaRelease.html">Media Release</a></li>
+			<li><a href="http://bit.ly/3uDxz0D">Volunteer</a></li>
+			<li onclick="showSocial()"><a href="#contact">More</a></li>
+		</ul>
+		<ul id="socialDropdown" class="socialLogos">
+			<li class="facebook"><a href="https://www.facebook.com/BurgessforEducation"><img src="facebookLogo.png" /></a></li>
+			<li class="instagram"><a href="https://www.instagram.com/burgessforeducation/"><img src="instaLogo.png" /></a></li>
+			<li class="twitter"><a href="https://twitter.com/BforSCEd"><img src="twitterLogo.png" /></a></li>
+			<!--<li class="tiktok"><a><img src="tiktokLogo.png" /></a></li>-->
+		</ul>
+		<ul id="mediaDropdown" class="">
+			<li><a href="about.html" title="Main Menu">About</a></li>
+			<li><a href="issues.html">Beliefs</a></li>
+			<li><a href="mediaRelease.html">Media Release</a></li>
+		</ul>
+
+	</nav>
+	<div class="content">
+		<div class="titleCardGrid">
+			<div class="titleCard">
+				<h1 class="issuesTitle">Beliefs</h1>
+			</div>
+			<div class="sloganCard">
+				<h2>"All Children Are Our Children"</h2>
+			</div>
+		</div>
+		<div	onclick="academicClick(); academicArrowFlip()" 
+				class="issues issue1">
+			<div class="card">
+				<h3>
+					Academic Excellence
+					<button>
+						<img id="academicArrow" class="arrow" src="arrow.png" />
+					</button>
+				</h3>
+			</div>
+			<ul class="dropList" id="academic">
+				<li>Every student should be taught in an atmosphere of rigorous expectations</li>
+				<li>Teachers must be supported in structuring an atmosphere to maximize learning</li>
+				<li>Teachers know what is best for students to excel</li>
+				<li>Schools should be organized in such a way as to allow teachers the maximum time to teach</li>
+				<li>Teachers should be free of the fear of teaching students because of harassment and frivolous lawsuits</li>
+			</ul>
+		</div>
+		<div 	onclick="communityClick(); communityArrowFlip()" 
+				class="issues issue2">
+			<div class="card">
+				<h3>
+					Community Control
+					<button>
+					<img id="communityArrow" class="arrow" src="arrow.png" /></button>
+				</h3>
+			</div>
+			<ul class="dropList" id="community">
+				<li>Schools should be locally controlled by the people through their boards of trustees</li>
+				<li>Schools should be welcoming places for parents, guardians, and citizens who have an interest in the education of children</li>
+				<li>Schools should engage the community in volunteer programs such as science, technology, engineering, the arts, math, and reading comprehension initiatives, mentoring, and the supervision of students</li>
+				<li>Schools should ensure that taxpayers' dollars of used wisely and that the people are not overtaxed</li>
+			</ul>
+		</div>
+		<div  	onclick="prideClick(); prideArrowFlip()" 
+				class="issues issue3">
+			<div class="card">
+				<h3>
+					Educator/Teacher Pride
+					<button>
+						<img id="prideArrow" class="arrow" src="arrow.png" />
+					</button>					
+				</h3>
+			</div>
+			<ul class="dropList" id="pride">
+				<li>Pay teachers as the guardians of civilization and society</li>
+				<li>Retain teachers in the profession by creating professional teaching environments</li>
+				<li>Innovation must be expected of teachers, and environments created for teachers to be innovative</li>
+				<li>Developing, advancing teachers in the profession </li>
+				<li>Enterprising among teachers must be encouraged as to create better methods and practices to engage students</li>
+			</ul>
+		</div>
+		<div  	onclick="civilClick(); civilArrowFlip()" 
+				class="issues issue4">
+			<div class="card">
+				<h3>
+					Civil Engagement
+					<button>
+						<img id="civilArrow" class="arrow" src="arrow.png" />
+					</button>					
+				</h3>
+			</div>
+			<ul class="dropList" id="civil">
+				<li>Schools should assist students by modeling pro-social behaviors</li>
+				<li>Schools should be places where students learn to interact with one another in a manner that ensures healthy civil relations</li>
+				<li>Schools should ensure the fair and balanced teaching of the history of our nation, our region, and our state </li>
+			</ul>
+		</div>
+		<div  	onclick="fundingClick(); fundingArrowFlip()" 
+				class="issues issue5">
+			<div class="card">
+				<h3>
+					School Funding
+					<button>
+					<img id="fundingArrow" class="arrow" src="arrow.png" /></button>					
+				</h3>
+			</div>
+			<ul class="dropList" id="funding">
+				<li>Public dollars should be used for public schools</li>
+				<li>Grants, foundations, and other funding streams must be sought</li>
+			</ul>
+		</div>
+		<div  	onclick="privateClick(); privateArrowFlip()" 
+				class="issues issue6">
+			<div class="card">
+				<h3>
+					Private, Parochial and Religious Schools
+					<button>
+					<img id="privateArrow" class="arrow" src="arrow.png" /></button>					
+				</h3>
+			</div>
+			<ul class="dropList" id="private">
+				<li>These schools play an important role in our society</li>
+				<li>Public dollars for public schools should not be diverted from public schools to fund private, parochial, or religious schools	</li>
+			</ul>
+		</div>
+		<div class="signature">
+			<img  src="signature.png" />
+		</div>
+	</div>
+	<footer>
+		<ul id="footerNav">
+			<li><a href="https://iwillvote.com/">Register to Vote Here</a></li>
+			<li><a href="https://linktr.ee/burgessforeducation">Follow Us On Social Media</a></li>
+			<li><a href="https://docs.google.com/forms/d/e/1FAIpQLSddpJWLv6j8J_ZhcuoqlDRiB976uD_Etb7eVX7wxU8tYbMNXA/viewform">Contact Us</a></li>
+		</ul>
+		<div id="subFooter">
+				<p>PO Box 291198 </br> Columbia, SC 29229 </p>
+		</div>
+	</footer>
+	<script>
+		//academic issue drop down effects
+		function academicClick() {
+			var x = document.getElementById("academic");
+			if (x.className.indexOf("show") == -1) {
+				x.className += " show";
+			} else {
+				x.className = x.className.replace(" show", "");
+			}
+		}
+		function academicArrowFlip() {
+			var x = document.getElementById("academicArrow");
+			if (x.className.indexOf("upsideDown") == -1) {
+				x.className += " upsideDown";
+			} else {
+				x.className = x.className.replace(" upsideDown", "");
+			}
+		}
+		//community issue drop down effects
+		function communityClick() {
+			var x = document.getElementById("community");
+			if (x.className.indexOf("show") == -1) {
+				x.className += " show";
+			} else {
+				x.className = x.className.replace(" show", "");
+			}
+		}
+		function communityArrowFlip() {
+			var x = document.getElementById("communityArrow");
+			if (x.className.indexOf("upsideDown") == -1) {
+				x.className += " upsideDown";
+			} else {
+				x.className = x.className.replace(" upsideDown", "");
+			}
+		}
+		//pride issue drop down effects
+		function prideClick() {
+			var x = document.getElementById("pride");
+			if (x.className.indexOf("show") == -1) {
+				x.className += " show";
+			} else {
+				x.className = x.className.replace(" show", "");
+			}
+		}
+		function prideArrowFlip() {
+			var x = document.getElementById("prideArrow");
+			if (x.className.indexOf("upsideDown") == -1) {
+				x.className += " upsideDown";
+			} else {
+				x.className = x.className.replace(" upsideDown", "");
+			}
+		}
+		//civil issue drop down effects
+		function civilClick() {
+			var x = document.getElementById("civil");
+			if (x.className.indexOf("show") == -1) {
+				x.className += " show";
+			} else {
+				x.className = x.className.replace(" show", "");
+			}
+		}
+		function civilArrowFlip() {
+			var x = document.getElementById("civilArrow");
+			if (x.className.indexOf("upsideDown") == -1) {
+				x.className += " upsideDown";
+			} else {
+				x.className = x.className.replace(" upsideDown", "");
+			}
+		}
+		//funding issue drop down effects
+		function fundingClick() {
+			var x = document.getElementById("funding");
+			if (x.className.indexOf("show") == -1) {
+				x.className += " show";
+			} else {
+				x.className = x.className.replace(" show", "");
+			}
+		}
+		function fundingArrowFlip() {
+			var x = document.getElementById("fundingArrow");
+			if (x.className.indexOf("upsideDown") == -1) {
+				x.className += " upsideDown";
+			} else {
+				x.className = x.className.replace(" upsideDown", "");
+			}
+		}
+		//private issue drop down effects
+		function privateClick() {
+			var x = document.getElementById("private");
+			if (x.className.indexOf("show") == -1) {
+				x.className += " show";
+			} else {
+				x.className = x.className.replace(" show", "");
+			}
+		}
+		function privateArrowFlip() {
+			var x = document.getElementById("privateArrow");
+			if (x.className.indexOf("upsideDown") == -1) {
+				x.className += " upsideDown";
+			} else {
+				x.className = x.className.replace(" upsideDown", "");
+			}
+		}
+		function showSocial() {
+			var x = document.getElementById("socialDropdown");
+			if (x.className.indexOf("show") == -1) {
+				x.className += " show";
+			} else {
+				x.className = x.className.replace(" show", "");
+			}
+		}
+		function showMobile() {
+			var x = document.getElementById("mediaDropdown");
+			if (x.className.indexOf("show") == -1) {
+				x.className += " show";
+			} else {
+				x.className = x.className.replace(" show", "");
+			}
+		}
+	</script>
+</body>
+</html>
