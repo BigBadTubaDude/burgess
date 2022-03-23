@@ -91,7 +91,7 @@
 	grid-column: 2 / -1;
 	border-left: 3px solid #272c51;
 	align-items: center;
-	box-shadow:0 0 3em rgba(39,44,81, .35);
+	box-shadow:0 0 1.5em rgba(50,44,81, .35);
 }
 /*******************************issue cards and words*/
 .card > h3 {
