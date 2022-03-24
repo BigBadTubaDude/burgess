@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap');
 @import \fonts\Boeklins_Universe;
 
-.content {
+.content > * {
 	display: grid;
 	margin-top: 3.6rem;
 	gap: 3rem;
@@ -13,11 +13,12 @@
 @media only screen and (max-width: 1000px){
 	#podiumMobile {
 		width: 70%;
-		justify-self: center;
+		place-self: center;
 		border-left: 1px solid #e4e4e4;
 		border-top: 1px solid white;
 		box-shadow: 5px 5px 10px;
 		display: block;
+		margin: 2rem auto;
 	}
 }
 /************************************************Title cards*/
@@ -139,8 +140,8 @@
 .issue6 div.card h3 { /*fits longer title in with arrow*/
 	grid-template-columns: 2fr 1fr;
 }
-div.content > div:last-of-type {
-	margin-bottom: -1.5rem;
+#bottom3 > div:last-of-type {
+	margin-bottom: 6.5rem;
 }
 .issues > ul > li:first-of-type {
 	margin-top: min(2rem);
@@ -161,10 +162,14 @@ ul.dropList > li {
 }
 @media only screen and (min-width: 1200px) {
 	.issue2 .card {
-		grid-column: 5 / -1;
+		grid-column: 1 / -5;
+		border-left: none;
+		border-right: 3px solid #272c51;
 	}
 		.academic, .pride {
-			grid-column: 4 / -1;
+			grid-column: 1 / -4;
+			border-left: none;
+			border-right: 3px solid #272c51;
 	}
 		.issues {
 		grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
