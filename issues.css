@@ -77,13 +77,13 @@
 /************************************issues*/
 .issues {
 	display: grid;
-	grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
 	grid-template-rows: 11rem auto;
     align-items: center;
 
 }
 .dropList {
-	grid-column: 2 / 7;
+	grid-column: 2 / -1;
 }
 .card {
 	background-color: rgb(236,236,236);
@@ -93,6 +93,8 @@
 	align-items: center;
 	box-shadow:0 0 1.5em rgba(50,44,81, .35);
 }
+
+
 /*******************************issue cards and words*/
 .card > h3 {
 	padding-left: 3.5rem;
@@ -156,4 +158,15 @@ ul.dropList > li {
 	color: rgb(70,70,70);
 	padding-right: 1.35rem;
 	line-height: 1.75;
+}
+@media only screen and (min-width: 1200px) {
+	.issue2 .card {
+		grid-column: 5 / -1;
+	}
+		.academic, .pride {
+			grid-column: 4 / -1;
+	}
+		.issues {
+		grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+	}
 }
