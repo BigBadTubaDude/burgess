@@ -55,9 +55,22 @@
 	grid-column: 1 / -1;
 	align-items: center;
 }
-#podiumDesktop {
-	grid-column: 1 \ 2;
+#top3 {
+	position: relative;
 }
+
+#podiumDesktop {
+	position: absolute;
+	right: 4rem;
+	top: 300px;
+	width: 33vw;
+	transform: translate(0, -50%);
+	clip-path: polygon(50% 0%, 76.83% 0%, 100% 50%, 50% 100%, 0% 50%)
+	}
+#podiumWrap {
+	filter: drop-shadow(5px 5px 10px);
+}
+
 .issuesTitle {
 	background-color: rgb(236,236,236);
 	grid-column: 1 / -1;
@@ -93,6 +106,9 @@
 	border-left: 3px solid #272c51;
 	align-items: center;
 	box-shadow:0 0 1.5em rgba(50,44,81, .35);
+}
+.issues {
+	filter: drop-shadow(0 0 1.5em rgba(50,44,81, .35));
 }
 
 
@@ -137,7 +153,7 @@
 .upsideDown {
 	transform: scaleY(-1);
 }
-.issue6 div.card h3 { /*fits longer title in with arrow*/
+.issue6 div div.card h3 { /*fits longer title in with arrow*/
 	grid-template-columns: 2fr 1fr;
 }
 #bottom3 > div:last-of-type {
@@ -161,10 +177,14 @@ ul.dropList > li {
 	line-height: 1.75;
 }
 @media only screen and (min-width: 1200px) {
-	.issue2 .card {
+	.academic {
+		clip-path: polygon(0px 0px, 100% 0px, 86.71% 100%, 0% 100%);
+	}
+	.community {
 		grid-column: 1 / -5;
 		border-left: none;
 		border-right: 3px solid #272c51;
+		clip-path: polygon(0px 0px, 100% 0px, 86.71% 100%, 0% 100%);
 	}
 		.academic, .pride {
 			grid-column: 1 / -4;
