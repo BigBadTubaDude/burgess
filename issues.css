@@ -6,21 +6,7 @@
 	margin-top: 3.6rem;
 	gap: 3rem;
 }
-/***************************************************top picture*/
-#podiumMobile {
-	display: none;
-}
-@media only screen and (max-width: 1000px){
-	#podiumMobile {
-		width: 70%;
-		place-self: center;
-		border-left: 1px solid #e4e4e4;
-		border-top: 1px solid white;
-		box-shadow: 5px 5px 10px;
-		display: block;
-		margin: 2rem auto;
-	}
-}
+
 /************************************************Title cards*/
 .titleCardGrid {
 	display: grid;
@@ -57,19 +43,10 @@
 }
 #top3 {
 	position: relative;
+	overflow-x: hidden;
 }
 
-#podiumDesktop {
-	position: absolute;
-	right: 4rem;
-	top: 300px;
-	width: 33vw;
-	transform: translate(0, -50%);
-	clip-path: polygon(50% 0%, 76.83% 0%, 100% 50%, 50% 100%, 0% 50%)
-	}
-#podiumWrap {
-	filter: drop-shadow(5px 5px 10px);
-}
+
 
 .issuesTitle {
 	background-color: rgb(236,236,236);
@@ -99,16 +76,15 @@
 .dropList {
 	grid-column: 2 / -1;
 }
-.card {
+.wrap {
 	background-color: rgb(236,236,236);
 	display: grid;
 	grid-column: 2 / -1;
 	border-left: 3px solid #272c51;
 	align-items: center;
-	box-shadow:0 0 1.5em rgba(50,44,81, .35);
 }
 .issues {
-	filter: drop-shadow(0 0 1.5em rgba(50,44,81, .35));
+	filter: drop-shadow(0 0 1.5em rgba(33,44,81, .4));
 }
 
 
@@ -134,15 +110,6 @@
 }.issue3 li::first-letter {
 	font-size: 135%; */
 
-@media only screen and (max-width: 1100px) {
-	.issues > ul {
-		grid-column: 1 / -1;
-		margin: auto 3rem;
-	}
-	ul.dropList {
-		grid-column: 1 / 7;
-	}
-}
 .card button {
 	border: none;
 	background-color: rgb(236,236,236);
@@ -176,22 +143,68 @@ ul.dropList > li {
 	padding-right: 1.35rem;
 	line-height: 1.75;
 }
+/********************MOBILE SPECIFIC**************************/
+/***************************************************top picture*/
+#podiumMobile {
+	display: none;
+}
+@media only screen and (max-width: 1200px){
+	#podiumMobile {
+		width: 70%;
+		place-self: center;
+		border-left: 1px solid #e4e4e4;
+		border-top: 1px solid white;
+		box-shadow: 5px 5px 10px;
+		display: block;
+		margin: 2rem auto;
+	}
+	.issues > ul {
+		grid-column: 1 / -1;
+		margin: auto 3rem;
+	}
+	ul.dropList {
+		grid-column: 1 / 7;
+	}
+	#podiumDesktop {
+		display: none;
+	}
+}
+/****************DESKTOP SPECIFIC**************************/
+#podiumDesktop {
+	position: absolute;
+	right: calc(-11px + 1vw);
+	top: 275px;
+	width: 678px;
+	height: 528px;
+	transform: translate(0, -50%) scale(.8, .8);
+	clip-path: polygon(50% 0%, 76.83% 0%, 100% 50%, 50% 100%, 0% 50%);
+	}
+#podiumWrap {
+	filter: drop-shadow(5px 5px 10px rgb(34, 30, 88, .5));
+}
 @media only screen and (min-width: 1200px) {
 	.academic {
-		clip-path: polygon(0px 0px, 100% 0px, 86.71% 100%, 0% 100%);
+    clip-path: polygon(0px 0px, 99% 0px, calc(100% - 206px) 100%, 0% 100%);
+	grid-column: 1 / -5;
 	}
 	.community {
-		grid-column: 1 / -5;
-		border-left: none;
-		border-right: 3px solid #272c51;
-		clip-path: polygon(0px 0px, 100% 0px, 86.71% 100%, 0% 100%);
+		grid-column: 1 / -6;
+		clip-path: polygon(0px 0px, calc(100% - 196px) 0px, 100% 100%, 0% 100%);
 	}
-		.academic, .pride {
-			grid-column: 1 / -4;
-			border-left: none;
-			border-right: 3px solid #272c51;
+	.pride {
+		grid-column: 1 / -2;
+		clip-path: polygon(0px 0px, 100% 0px, 100% 100%, 0% 100%);
 	}
-		.issues {
+	.wrap, .card {
+		border: none;
+	}
+	.issues {
 		grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+	}
+}
+@media only screen and (min-width: 1600px) { /*centers pictures at larger screen sizes*/
+	#podiumDesktop {
+		right: calc(-10px + 3vw);
+		transform: translate(0, -50%) scale(.85, .85);
 	}
 }

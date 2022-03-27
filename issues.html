@@ -60,7 +60,7 @@
 
 	</nav>
 	<div class="content">
-		<img src="podiumCropped.jpg" id="podiumMobile"/> <!--visible only on mobile-->
+		<img src="podiumCroppedResUp.jpg" id="podiumMobile"/> <!--visible only on mobile-->
 		<div class="titleCardGrid">
 			<div class="titleCard">
 				<h1 class="issuesTitle">Beliefs</h1>
@@ -71,8 +71,8 @@
 			</div>
 		</div>
 		<div id="top3">
-			<div id="podiumWrap">
-				<img src="podiumCropped.jpg" id="podiumDesktop"/>
+			<div id="podiumWrap"> <!-- all bars and pictures need to be wrapped in an outer div for the drop shadow to work on clip-path elements -->
+				<img src="podiumCroppedResUp.jpg" id="podiumDesktop"/>
 			</div>
 			<div	onclick="academicClick(); academicArrowFlip()" 
 					class="issues issue1">
@@ -114,14 +114,16 @@
 			</div>
 			<div  	onclick="prideClick(); prideArrowFlip()" 
 					class="issues issue3">
-				<div class="card pride">
-					<h3>
-						Educator/Teacher Pride
-						<button>
-							<img id="prideArrow" class="arrow" src="arrow.png" />
-						</button>					
-					</h3>
-				</div>
+				<div class="pride wrap">	
+					<div class="card">
+						<h3>
+							Educator/Teacher Pride
+							<button>
+								<img id="prideArrow" class="arrow" src="arrow.png" />
+							</button>					
+						</h3>
+					</div>
+				</div>	
 				<ul class="dropList" id="pride">
 					<li>Pay teachers as the guardians of civilization and society</li>
 					<li>Retain teachers in the profession by creating professional teaching environments</li>
@@ -134,13 +136,15 @@
 		<div id="bottom3">
 			<div  	onclick="civilClick(); civilArrowFlip()" 
 					class="issues issue4">
-				<div class="card civil">
-					<h3>
-						Civil Engagement
-						<button>
-							<img id="civilArrow" class="arrow" src="arrow.png" />
-						</button>					
-					</h3>
+				<div class="wrap civil">	
+					<div class="card">
+						<h3>
+							Civil Engagement
+							<button>
+								<img id="civilArrow" class="arrow" src="arrow.png" />
+							</button>					
+						</h3>
+					</div>
 				</div>
 				<ul class="dropList" id="civil">
 					<li>Schools should assist students by modeling pro-social behaviors</li>
@@ -150,13 +154,15 @@
 			</div>
 			<div  	onclick="fundingClick(); fundingArrowFlip()" 
 					class="issues issue5">
-				<div class="card">
-					<h3>
-						School Funding
-						<button>
-						<img id="fundingArrow" class="arrow" src="arrow.png" /></button>					
-					</h3>
-				</div>
+				<div class="wrap fund">	
+					<div class="card">
+						<h3>
+							School Funding
+							<button>
+							<img id="fundingArrow" class="arrow" src="arrow.png" /></button>					
+						</h3>
+					</div>
+				</div>	
 				<ul class="dropList" id="funding">
 					<li>Public dollars should be used for public schools</li>
 					<li>Grants, foundations, and other funding streams must be sought</li>
@@ -164,13 +170,15 @@
 			</div>
 			<div  	onclick="privateClick(); privateArrowFlip()" 
 					class="issues issue6">
-				<div class="card">
-					<h3>
-						Private, Parochial and Religious Schools
-						<button>
-						<img id="privateArrow" class="arrow" src="arrow.png" /></button>					
-					</h3>
-				</div>
+				<div class="wrap private">	
+					<div class="card">
+						<h3>
+							Private, Parochial and Religious Schools
+							<button>
+							<img id="privateArrow" class="arrow" src="arrow.png" /></button>					
+						</h3>
+					</div>
+				</div>	
 				<ul class="dropList" id="private">
 					<li>These schools play an important role in our society</li>
 					<li>Public dollars for public schools should not be diverted from public schools to fund private, parochial, or religious schools	</li>
