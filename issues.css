@@ -1,30 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap');
 @import \fonts\Boeklins_Universe;
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@100&display=swap');
 
-.content {
+.content > * {
 	display: grid;
 	margin-top: 3.6rem;
+	padding-bottom: 3rem;
 	gap: 3rem;
 }
-/***************************************************top picture*/
-#podiumMobile {
-	display: none;
+:root {
+	--main-color: rgb(34, 44, 81);
 }
-@media only screen and (max-width: 1000px){
-	#podiumMobile {
-		width: 70%;
-		justify-self: center;
-		border-left: 1px solid #e4e4e4;
-		border-top: 1px solid white;
-		box-shadow: 5px 5px 10px;
-		display: block;
-	}
-}
+
 /************************************************Title cards*/
 .titleCardGrid {
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
 	grid-template-rows: 1fr 6rem;
+	padding-bottom: 1rem; /*overrides padding given to all content parent elements*/
 }
 .titleCard {
 	grid-column: 1 / -1;
@@ -54,9 +47,16 @@
 	grid-column: 1 / -1;
 	align-items: center;
 }
-#podiumDesktop {
-	grid-column: 1 \ 2;
+#top3 {
+	position: relative;
+	overflow-x: hidden;
+	margin-top: 0rem; /*overrides top margin given to all content parent elements*/
 }
+#bottom3 {
+	z-index: -2;
+}
+
+
 .issuesTitle {
 	background-color: rgb(236,236,236);
 	grid-column: 1 / -1;
@@ -65,47 +65,51 @@
 	font-size: 3rem;
 	color: rgb(10,7,31);
 }
-.slogan {
-	text-wrap: none;
-	width: 100%;
-	font-size: 2.5rem;
-	font-family: nunito-sans,sans-serif;
-	font-weight: 400;
-	font-style: normal;	
-}
 
 /************************************issues*/
 .issues {
 	display: grid;
-	grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
 	grid-template-rows: 11rem auto;
     align-items: center;
 
 }
 .dropList {
-	grid-column: 2 / 7;
+	grid-column: 2 / -1;
 }
-.card {
+.wrap {
 	background-color: rgb(236,236,236);
 	display: grid;
 	grid-column: 2 / -1;
 	border-left: 3px solid #272c51;
 	align-items: center;
-	box-shadow:0 0 1.5em rgba(50,44,81, .35);
 }
+.issues {
+	filter: drop-shadow(0 0 1.5em rgba(34,44,81, .4));
+}
+
+
 /*******************************issue cards and words*/
+.card {
+	display: grid;
+	justify-content: center;
+	background-color: var(--main-color);
+}
 .card > h3 {
-	padding-left: 3.5rem;
 	font-size: 3rem;
-	color: rgb(23,20,44);
+	color: rgb(229, 229, 229);
 }
 .issues > ul {
 	display: none;
+	background-color: rgb(230,230,230,.7);
 }
-.issues > ul > li {
-	line-height: 3rem;
-	margin-top: 1rem;
-	/*font-size: clamp(1rem, 1.7rem, 2.5rem);*/
+.issues > ul li {
+	background-color: rgb(200, 200, 200, .06);
+	border-radius: 10px;
+}
+li::marker {
+	margin-left: 5rem;
+	padding-left: 5rem;
 }
 /*.issue1 h3::first-letter, 
 .issue2 h3::first-letter,
@@ -115,18 +119,9 @@
 }.issue3 li::first-letter {
 	font-size: 135%; */
 
-@media only screen and (max-width: 1100px) {
-	.issues > ul {
-		grid-column: 1 / -1;
-		margin: auto 3rem;
-	}
-	ul.dropList {
-		grid-column: 1 / 7;
-	}
-}
 .card button {
 	border: none;
-	background-color: rgb(236,236,236);
+	background-color: var(--main-color);
 }
 .issues ul.show {
 	display: block;
@@ -134,11 +129,11 @@
 .upsideDown {
 	transform: scaleY(-1);
 }
-.issue6 div.card h3 { /*fits longer title in with arrow*/
+.issue6 div div.card h3 { /*fits longer title in with arrow*/
 	grid-template-columns: 2fr 1fr;
 }
-div.content > div:last-of-type {
-	margin-bottom: -1.5rem;
+#bottom3 > div:last-of-type {
+	margin-bottom: 6.5rem;
 }
 .issues > ul > li:first-of-type {
 	margin-top: min(2rem);
@@ -150,10 +145,115 @@ div.content > div:last-of-type {
 	z-index: -1;
 }
 /***************************font stuff*/
+
 ul.dropList > li {
-	font-family: nunito-sans,sans-serif;
 	font-size: 2.7rem;
 	color: rgb(70,70,70);
 	padding-right: 1.35rem;
 	line-height: 1.75;
+	margin-top: 1rem;
+	color: var(--main-color);
+	font-family: 'IBM Plex Sans Arabic', sans-serif;
+	font-weight: 600;
+}
+#pride > li::first-letter { /*PRIDE text effect*/
+	font-size: 2em;
+	font-weight: 700;
+	text-shadow: 0 0 20px rgb(2400,0,0);
+}
+.academic .card h3:first-letter,
+.community .card h3:first-letter,
+.pride .card h3:first-letter {
+	color: rgb(235,105,90);
+}
+/********************MOBILE SPECIFIC**************************/
+/***************************************************top picture*/
+#podiumMobile {
+	display: none;
+}
+@media only screen and (max-width: 1200px){
+	#podiumMobile {
+		width: 70%;
+		place-self: center;
+		border-left: 1px solid #e4e4e4;
+		border-top: 1px solid white;
+		box-shadow: 5px 5px 10px;
+		display: block;
+		margin: 2rem auto;
+	}
+	.issues > ul {
+		grid-column: 1 / -1;
+		margin: auto 3rem;
+	}
+	ul.dropList {
+		grid-column: 1 / -1;
+	}
+	#podiumDesktop {
+		display: none;
+	}
+}
+/****************DESKTOP SPECIFIC**************************/
+/***************************************************top picture*/
+#podiumDesktop {
+	position: absolute;
+	right: calc(-11px + 1vw);
+	top: 275px;
+	width: 678px;
+	height: 528px;
+	transform: translate(0, -50%) scale(.8, .8);
+	clip-path: polygon(50% 0%, 76.83% 0%, 100% 50%, 50% 100%, 0% 50%);
+	}
+#podiumWrap {
+	filter: drop-shadow(5px 5px 1rem rgb(34, 30, 88, .4));
+}
+/**************************************************wofford pic*/
+#wofford {
+	position: absolute;
+	height: 341px;
+	width: 512px;
+	left: 3vw;
+}
+@media only screen and (min-width: 1201px) {
+	.dropList {
+		z-index: -10;
+		border-radius: 10px;
+		grid-column: 2 / -2;
+	}
+	.academic { /*bar*/
+
+    clip-path: polygon(0px 0px, 99% 0px, calc(100% - 206px) 100%, 0% 100%);
+	grid-column: 1 / -5;
+	}
+	#academic { /*text*/
+		grid-column: 2 / -5;
+	}
+	.community {
+		grid-column: 1 / -6;
+		clip-path: polygon(0px 0px, calc(100% - 196px) 0px, 100% 100%, 0% 100%);
+	}
+	.pride {
+		margin-top: .5rem;
+		grid-column: 1 / -2;
+		clip-path: polygon(0px 0px, 100% 0px, 100% 100%, 0% 100%);
+	}
+	.wrap, .card {
+		border: none;
+	}
+	.issues {
+		grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+	}
+	.civil, .fund{
+		grid-column: 7 / -1;
+	}
+	#civil {
+		grid-column: 3 / -2;
+	}
+	/***************************h3 spacing*/
+
+}
+@media only screen and (min-width: 1600px) { /*centers pictures at larger screen sizes*/
+	#podiumDesktop {
+		right: calc(-10px + 3vw);
+		transform: translate(0, -50%) scale(.85, .85);
+	}
 }

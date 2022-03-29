@@ -60,7 +60,7 @@
 
 	</nav>
 	<div class="content">
-		<img src="podiumCropped.jpg" id="podiumMobile"/> <!--visible only on mobile-->
+		<img src="podiumCroppedResUp.jpg" id="podiumMobile"/> <!--visible only on mobile-->
 		<div class="titleCardGrid">
 			<div class="titleCard">
 				<h1 class="issuesTitle">Beliefs</h1>
@@ -70,101 +70,121 @@
 				<h2>"All Children Are Our Children"</h2>
 			</div>
 		</div>
-		<div	onclick="academicClick(); academicArrowFlip()" 
-				class="issues issue1">
-			<div class="card">
-				<h3>
-					Academic Excellence
-					<button>
-						<img id="academicArrow" class="arrow" src="arrow.png" />
-					</button>
-				</h3>
+		<div id="top3">
+			<div id="podiumWrap"> <!-- all bars and pictures need to be wrapped in an outer div for the drop shadow to work on clip-path elements -->
+				<img src="podiumCroppedResUp.jpg" id="podiumDesktop"/>
 			</div>
-			<ul class="dropList" id="academic">
-				<li>Every student should be taught in an atmosphere of rigorous expectations</li>
-				<li>Teachers must be supported in structuring an atmosphere to maximize learning</li>
-				<li>Teachers know what is best for students to excel</li>
-				<li>Schools should be organized in such a way as to allow teachers the maximum time to teach</li>
-				<li>Teachers should be free of the fear of teaching students because of harassment and frivolous lawsuits</li>
-			</ul>
+			<div	onclick="academicClick(); academicArrowFlip()" 
+					class="issues issue1">
+				<div class ="wrap out academic">
+					<div class="card">
+						<h3>
+							Academic Excellence
+							<button>
+								<img id="academicArrow" class="arrow" src="arrow.png" />
+							</button>
+						</h3>
+					</div>
+				</div>
+				<ul class="dropList" id="academic">
+					<li>Every student should be taught in an atmosphere of rigorous expectations</li>
+					<li>Teachers must be supported in structuring an atmosphere to maximize learning</li>
+					<li>Teachers know what is best for students to excel</li>
+					<li>Schools should be organized in such a way as to allow teachers the maximum time to teach</li>
+					<li>Teachers should be free of the fear of teaching students because of harassment and frivolous lawsuits</li>
+				</ul>
+			</div>
+			<div 	onclick="communityClick(); communityArrowFlip()" 
+					class="issues issue2">
+				<div class="wrap community">
+					<div class="card ">
+						<h3>
+							Community Control
+							<button>
+							<img id="communityArrow" class="arrow" src="arrow.png" /></button>
+						</h3>
+					</div>
+				</div>
+				<ul class="dropList" id="community">
+					<li>Schools should be locally controlled by the people through their boards of trustees</li>
+					<li>Schools should be welcoming places for parents, guardians, and citizens who have an interest in the education of children</li>
+					<li>Schools should engage the community in volunteer programs such as science, technology, engineering, the arts, math, and reading comprehension initiatives, mentoring, and the supervision of students</li>
+					<li>Schools should ensure that taxpayers' dollars of used wisely and that the people are not overtaxed</li>
+				</ul>
+			</div>
+			<div  	onclick="prideClick(); prideArrowFlip()" 
+					class="issues issue3">
+				<div class="pride wrap">	
+					<div class="card">
+						<h3>
+							Educator/Teacher Pride
+							<button>
+								<img id="prideArrow" class="arrow" src="arrow.png" />
+							</button>					
+						</h3>
+					</div>
+				</div>	
+				<ul class="dropList" id="pride">
+					<li>Pay teachers as the guardians of civilization and society</li>
+					<li>Retain teachers in the profession by creating professional teaching environments</li>
+					<li>Innovation must be expected of teachers, and environments created for teachers to be innovative</li>
+					<li>Developing, advancing teachers in the profession </li>
+					<li>Enterprising among teachers must be encouraged as to create better methods and practices to engage students</li>
+				</ul>
+			</div>
 		</div>
-		<div 	onclick="communityClick(); communityArrowFlip()" 
-				class="issues issue2">
-			<div class="card">
-				<h3>
-					Community Control
-					<button>
-					<img id="communityArrow" class="arrow" src="arrow.png" /></button>
-				</h3>
+		<div id="bottom3">
+			<img id="wofford" src="wofford.png"> </img>
+			<div  	onclick="civilClick(); civilArrowFlip()" 
+					class="issues issue4">
+				<div class="wrap civil">	
+					<div class="card">
+						<h3>
+							Civil Engagement
+							<button>
+								<img id="civilArrow" class="arrow" src="arrow.png" />
+							</button>					
+						</h3>
+					</div>
+				</div>
+				<ul class="dropList" id="civil">
+					<li>Schools should assist students by modeling pro-social behaviors</li>
+					<li>Schools should be places where students learn to interact with one another in a manner that ensures healthy civil relations</li>
+					<li>Schools should ensure the fair and balanced teaching of the history of our nation, our region, and our state </li>
+				</ul>
 			</div>
-			<ul class="dropList" id="community">
-				<li>Schools should be locally controlled by the people through their boards of trustees</li>
-				<li>Schools should be welcoming places for parents, guardians, and citizens who have an interest in the education of children</li>
-				<li>Schools should engage the community in volunteer programs such as science, technology, engineering, the arts, math, and reading comprehension initiatives, mentoring, and the supervision of students</li>
-				<li>Schools should ensure that taxpayers' dollars of used wisely and that the people are not overtaxed</li>
-			</ul>
-		</div>
-		<div  	onclick="prideClick(); prideArrowFlip()" 
-				class="issues issue3">
-			<div class="card">
-				<h3>
-					Educator/Teacher Pride
-					<button>
-						<img id="prideArrow" class="arrow" src="arrow.png" />
-					</button>					
-				</h3>
+			<div  	onclick="fundingClick(); fundingArrowFlip()" 
+					class="issues issue5">
+				<div class="wrap fund">	
+					<div class="card">
+						<h3>
+							School Funding
+							<button>
+							<img id="fundingArrow" class="arrow" src="arrow.png" /></button>					
+						</h3>
+					</div>
+				</div>	
+				<ul class="dropList" id="funding">
+					<li>Public dollars should be used for public schools</li>
+					<li>Grants, foundations, and other funding streams must be sought</li>
+				</ul>
 			</div>
-			<ul class="dropList" id="pride">
-				<li>Pay teachers as the guardians of civilization and society</li>
-				<li>Retain teachers in the profession by creating professional teaching environments</li>
-				<li>Innovation must be expected of teachers, and environments created for teachers to be innovative</li>
-				<li>Developing, advancing teachers in the profession </li>
-				<li>Enterprising among teachers must be encouraged as to create better methods and practices to engage students</li>
-			</ul>
-		</div>
-		<div  	onclick="civilClick(); civilArrowFlip()" 
-				class="issues issue4">
-			<div class="card">
-				<h3>
-					Civil Engagement
-					<button>
-						<img id="civilArrow" class="arrow" src="arrow.png" />
-					</button>					
-				</h3>
+			<div  	onclick="privateClick(); privateArrowFlip()" 
+					class="issues issue6">
+				<div class="wrap private">	
+					<div class="card">
+						<h3>
+							Private, Parochial and Religious Schools
+							<button>
+							<img id="privateArrow" class="arrow" src="arrow.png" /></button>					
+						</h3>
+					</div>
+				</div>	
+				<ul class="dropList" id="private">
+					<li>These schools play an important role in our society</li>
+					<li>Public dollars for public schools should not be diverted from public schools to fund private, parochial, or religious schools	</li>
+				</ul>
 			</div>
-			<ul class="dropList" id="civil">
-				<li>Schools should assist students by modeling pro-social behaviors</li>
-				<li>Schools should be places where students learn to interact with one another in a manner that ensures healthy civil relations</li>
-				<li>Schools should ensure the fair and balanced teaching of the history of our nation, our region, and our state </li>
-			</ul>
-		</div>
-		<div  	onclick="fundingClick(); fundingArrowFlip()" 
-				class="issues issue5">
-			<div class="card">
-				<h3>
-					School Funding
-					<button>
-					<img id="fundingArrow" class="arrow" src="arrow.png" /></button>					
-				</h3>
-			</div>
-			<ul class="dropList" id="funding">
-				<li>Public dollars should be used for public schools</li>
-				<li>Grants, foundations, and other funding streams must be sought</li>
-			</ul>
-		</div>
-		<div  	onclick="privateClick(); privateArrowFlip()" 
-				class="issues issue6">
-			<div class="card">
-				<h3>
-					Private, Parochial and Religious Schools
-					<button>
-					<img id="privateArrow" class="arrow" src="arrow.png" /></button>					
-				</h3>
-			</div>
-			<ul class="dropList" id="private">
-				<li>These schools play an important role in our society</li>
-				<li>Public dollars for public schools should not be diverted from public schools to fund private, parochial, or religious schools	</li>
-			</ul>
 		</div>
 		<div class="signature">
 			<img  src="signature.png" />
