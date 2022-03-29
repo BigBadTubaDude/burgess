@@ -211,7 +211,7 @@ ul.dropList > li {
 	position: absolute;
 	height: 341px;
 	width: 512px;
-	left: 3vw;
+	left: 6%;
 }
 @media only screen and (min-width: 1201px) {
 	.dropList {
@@ -255,5 +255,8 @@ ul.dropList > li {
 	#podiumDesktop {
 		right: calc(-10px + 3vw);
 		transform: translate(0, -50%) scale(.85, .85);
+	}
+	#wofford {
+		left: 10%;
 	}
 }
