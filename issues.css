@@ -212,6 +212,7 @@ ul.dropList > li {
 	height: 341px;
 	width: 512px;
 	left: 6%;
+	display: none;
 }
 @media only screen and (min-width: 1201px) {
 	.dropList {
@@ -247,6 +248,9 @@ ul.dropList > li {
 	}
 	#civil {
 		grid-column: 3 / -2;
+	}
+	#wofford {
+		display: block;
 	}
 	/***************************h3 spacing*/
 
