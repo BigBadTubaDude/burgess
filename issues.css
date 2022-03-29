@@ -1,10 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap');
 @import \fonts\Boeklins_Universe;
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@100&display=swap');
 
 .content > * {
 	display: grid;
 	margin-top: 3.6rem;
+	padding-bottom: 3rem;
 	gap: 3rem;
+}
+:root {
+	--main-color: rgb(34, 44, 81);
 }
 
 /************************************************Title cards*/
@@ -12,6 +17,7 @@
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
 	grid-template-rows: 1fr 6rem;
+	padding-bottom: 1rem; /*overrides padding given to all content parent elements*/
 }
 .titleCard {
 	grid-column: 1 / -1;
@@ -44,8 +50,11 @@
 #top3 {
 	position: relative;
 	overflow-x: hidden;
+	margin-top: 0rem; /*overrides top margin given to all content parent elements*/
 }
-
+#bottom3 {
+	z-index: -2;
+}
 
 
 .issuesTitle {
@@ -55,14 +64,6 @@
 	align-items: center;
 	font-size: 3rem;
 	color: rgb(10,7,31);
-}
-.slogan {
-	text-wrap: none;
-	width: 100%;
-	font-size: 2.5rem;
-	font-family: nunito-sans,sans-serif;
-	font-weight: 400;
-	font-style: normal;	
 }
 
 /************************************issues*/
@@ -84,23 +85,31 @@
 	align-items: center;
 }
 .issues {
-	filter: drop-shadow(0 0 1.5em rgba(33,44,81, .4));
+	filter: drop-shadow(0 0 1.5em rgba(34,44,81, .4));
 }
 
 
 /*******************************issue cards and words*/
+.card {
+	display: grid;
+	justify-content: center;
+	background-color: var(--main-color);
+}
 .card > h3 {
-	padding-left: 3.5rem;
 	font-size: 3rem;
-	color: rgb(23,20,44);
+	color: rgb(229, 229, 229);
 }
 .issues > ul {
 	display: none;
+	background-color: rgb(230,230,230,.7);
 }
-.issues > ul > li {
-	line-height: 3rem;
-	margin-top: 1rem;
-	/*font-size: clamp(1rem, 1.7rem, 2.5rem);*/
+.issues > ul li {
+	background-color: rgb(200, 200, 200, .06);
+	border-radius: 10px;
+}
+li::marker {
+	margin-left: 5rem;
+	padding-left: 5rem;
 }
 /*.issue1 h3::first-letter, 
 .issue2 h3::first-letter,
@@ -112,7 +121,7 @@
 
 .card button {
 	border: none;
-	background-color: rgb(236,236,236);
+	background-color: var(--main-color);
 }
 .issues ul.show {
 	display: block;
@@ -136,12 +145,26 @@
 	z-index: -1;
 }
 /***************************font stuff*/
+
 ul.dropList > li {
-	font-family: nunito-sans,sans-serif;
 	font-size: 2.7rem;
 	color: rgb(70,70,70);
 	padding-right: 1.35rem;
 	line-height: 1.75;
+	margin-top: 1rem;
+	color: var(--main-color);
+	font-family: 'IBM Plex Sans Arabic', sans-serif;
+	font-weight: 600;
+}
+#pride > li::first-letter { /*PRIDE text effect*/
+	font-size: 2em;
+	font-weight: 700;
+	text-shadow: 0 0 20px rgb(2400,0,0);
+}
+.academic .card h3:first-letter,
+.community .card h3:first-letter,
+.pride .card h3:first-letter {
+	color: rgb(235,105,90);
 }
 /********************MOBILE SPECIFIC**************************/
 /***************************************************top picture*/
@@ -163,13 +186,14 @@ ul.dropList > li {
 		margin: auto 3rem;
 	}
 	ul.dropList {
-		grid-column: 1 / 7;
+		grid-column: 1 / -1;
 	}
 	#podiumDesktop {
 		display: none;
 	}
 }
 /****************DESKTOP SPECIFIC**************************/
+/***************************************************top picture*/
 #podiumDesktop {
 	position: absolute;
 	right: calc(-11px + 1vw);
@@ -180,18 +204,35 @@ ul.dropList > li {
 	clip-path: polygon(50% 0%, 76.83% 0%, 100% 50%, 50% 100%, 0% 50%);
 	}
 #podiumWrap {
-	filter: drop-shadow(5px 5px 10px rgb(34, 30, 88, .5));
+	filter: drop-shadow(5px 5px 1rem rgb(34, 30, 88, .4));
 }
-@media only screen and (min-width: 1200px) {
-	.academic {
+/**************************************************wofford pic*/
+#wofford {
+	position: absolute;
+	height: 341px;
+	width: 512px;
+	left: 3vw;
+}
+@media only screen and (min-width: 1201px) {
+	.dropList {
+		z-index: -10;
+		border-radius: 10px;
+		grid-column: 2 / -2;
+	}
+	.academic { /*bar*/
+
     clip-path: polygon(0px 0px, 99% 0px, calc(100% - 206px) 100%, 0% 100%);
 	grid-column: 1 / -5;
+	}
+	#academic { /*text*/
+		grid-column: 2 / -5;
 	}
 	.community {
 		grid-column: 1 / -6;
 		clip-path: polygon(0px 0px, calc(100% - 196px) 0px, 100% 100%, 0% 100%);
 	}
 	.pride {
+		margin-top: .5rem;
 		grid-column: 1 / -2;
 		clip-path: polygon(0px 0px, 100% 0px, 100% 100%, 0% 100%);
 	}
@@ -201,6 +242,14 @@ ul.dropList > li {
 	.issues {
 		grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
 	}
+	.civil, .fund{
+		grid-column: 7 / -1;
+	}
+	#civil {
+		grid-column: 3 / -2;
+	}
+	/***************************h3 spacing*/
+
 }
 @media only screen and (min-width: 1600px) { /*centers pictures at larger screen sizes*/
 	#podiumDesktop {
