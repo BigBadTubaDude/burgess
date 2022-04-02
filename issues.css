@@ -249,7 +249,7 @@ ul.dropList > li {
 		grid-column: 2 / -5;
 	}
 	#funding {
-		grid-column: 2 / -4;
+		grid-column: 2 / -5;
 	}
 	.community {
 		grid-column: 1 / -6;
@@ -280,9 +280,9 @@ ul.dropList > li {
 	}
 	#protest {
 		position: absolute;
-		top: 238%;
+		bottom: -594px;
 		right: 6vw;
-		z-index: 1;
+		z-index: -10;
 	}
 
 	/***************************h3 spacing*/
