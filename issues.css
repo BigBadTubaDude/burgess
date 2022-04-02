@@ -109,7 +109,7 @@
 	display: none;
 	background-color: rgb(230,230,230,.7);
 }
-.issues > ul li {
+.issues > ul > li {
 	background-color: rgb(200, 200, 200, .06);
 	border-radius: 10px;
 }
@@ -158,6 +158,7 @@ ul.dropList > li {
 	padding-right: 1.35rem;
 	line-height: 1.75;
 	margin-top: 1rem;
+	margin-left: 2rem;
 	color: var(--main-color);
 	font-family: 'IBM Plex Sans Arabic', sans-serif;
 	font-weight: 600;
@@ -206,7 +207,6 @@ ul.dropList > li {
 		text-align: center;
 		overflow-wrap: anywhere;
 		font-size: 2.45rem;
-		margin-bottom: 1rem;
 	}
 	#protest {
 		display: none;
