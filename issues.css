@@ -53,8 +53,9 @@
 	margin-top: 0rem; /*overrides top margin given to all content parent elements*/
 }
 #bottom3 {
-	z-index: -2;
-	padding-bottom: 0;
+	padding-top: 0;
+	margin-top: 0;
+	position: relative;
 }
 
 
@@ -175,8 +176,13 @@ ul.dropList > li {
 /***************************************************top picture*/
 #podiumMobile {
 	display: none;
+	padding-bottom: none;
 }
-@media only screen and (max-width: 1200px){
+#protest {
+	justify-self: center;
+}
+
+@media only screen and (max-width: 1225px){
 	#podiumMobile {
 		width: 70%;
 		place-self: center;
@@ -202,6 +208,9 @@ ul.dropList > li {
 		font-size: 2.45rem;
 		margin-bottom: 1rem;
 	}
+	#protest {
+		display: none;
+	}
 }
 /****************DESKTOP SPECIFIC**************************/
 /***************************************************top picture*/
@@ -225,7 +234,7 @@ ul.dropList > li {
 	left: 6%;
 	display: none;
 }
-@media only screen and (min-width: 1201px) {
+@media only screen and (min-width: 1226px) {
 	.dropList {
 		z-index: -10;
 		border-radius: 10px;
@@ -238,6 +247,9 @@ ul.dropList > li {
 	}
 	#academic { /*text*/
 		grid-column: 2 / -5;
+	}
+	#funding {
+		grid-column: 2 / -4;
 	}
 	.community {
 		grid-column: 1 / -6;
@@ -266,6 +278,13 @@ ul.dropList > li {
 	#wofford {
 		display: block;
 	}
+	#protest {
+		position: absolute;
+		top: 238%;
+		right: 6vw;
+		z-index: 1;
+	}
+
 	/***************************h3 spacing*/
 
 }
@@ -276,5 +295,10 @@ ul.dropList > li {
 	}
 	#wofford {
 		left: 10%;
+	}
+}
+@media only screen and (max-width: 1400px) { /*centers pictures at larger screen sizes*/
+	#protest {
+		right: 4vw;
 	}
 }
