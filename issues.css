@@ -107,7 +107,7 @@
 }
 .issues > ul {
 	display: none;
-	background-color: rgb(230,230,230,.7);
+	background-color: rgb(230,230,230,.8);
 }
 .issues > ul > li {
 	background-color: rgb(200, 200, 200, .06);
@@ -159,7 +159,7 @@ ul.dropList > li {
 	line-height: 1.75;
 	margin-top: 1rem;
 	margin-left: 2rem;
-	color: var(--main-color);
+	color: rgb(0,10,57);
 	font-family: 'IBM Plex Sans Arabic', sans-serif;
 	font-weight: 600;
 }
@@ -211,6 +211,10 @@ ul.dropList > li {
 	#protest {
 		display: none;
 	}
+	#wofford {
+		position: relative;
+		justify-self: center;
+	}
 }
 /****************DESKTOP SPECIFIC**************************/
 /***************************************************top picture*/
@@ -227,13 +231,7 @@ ul.dropList > li {
 	filter: drop-shadow(5px 5px 1rem rgb(34, 30, 88, .4));
 }
 /**************************************************wofford pic*/
-#wofford {
-	position: absolute;
-	height: 341px;
-	width: 512px;
-	left: 6%;
-	display: none;
-}
+
 @media only screen and (min-width: 1226px) {
 	.dropList {
 		z-index: -10;
@@ -276,7 +274,9 @@ ul.dropList > li {
 		grid-column: 3 / -2;
 	}
 	#wofford {
-		display: block;
+		position: absolute;
+		height: 341px;
+		width: 512px;
 	}
 	#protest {
 		position: absolute;
@@ -284,7 +284,6 @@ ul.dropList > li {
 		right: 6%;
 		z-index: -10;
 	}
-
 	/***************************h3 spacing*/
 
 }
