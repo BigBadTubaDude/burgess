@@ -281,7 +281,7 @@ ul.dropList > li {
 	#protest {
 		position: absolute;
 		bottom: -594px;
-		right: 6vw;
+		right: 6%;
 		z-index: -10;
 	}
 
@@ -299,6 +299,9 @@ ul.dropList > li {
 }
 @media only screen and (max-width: 1400px) { /*centers pictures at larger screen sizes*/
 	#protest {
-		right: 4vw;
+		right: 4%;
+	}
+	#wofford {
+		left: 4%;
 	}
 }
