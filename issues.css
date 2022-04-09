@@ -284,12 +284,14 @@ b {
 		position: absolute;
 		height: 341px;
 		width: 512px;
+		box-shadow: 5px 5px 1rem rgb(34, 30, 88, .4);
 	}
 	#protest {
 		position: absolute;
 		bottom: -594px;
 		right: 6%;
 		z-index: -10;
+		box-shadow: 5px 5px 1rem rgb(34, 30, 88, .4);
 	}
 	/***************************h3 spacing*/
 
