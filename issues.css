@@ -163,13 +163,16 @@ ul.dropList > li {
 	font-family: 'IBM Plex Sans Arabic', sans-serif;
 	font-weight: 600;
 }
-#pride li{
-	line-height: 1.35;
-}
+
 #pride > li b { /*PRIDE text effect*/
 	font-size: 2em;
-	font-weight: 900;
+	font-weight: 600;
 	text-shadow: 0 0 20px rgb(150,150,150);
+	font-family: 'Faster One', cursive;
+}
+#pride li{
+	line-height: 1.35;
+	list-style-type: none;
 }
 b {
 	margin-right: 4px;
@@ -177,9 +180,11 @@ b {
 .academic .card h3:first-letter, /*ACE text effects*/
 .community .card h3:first-letter,
 .pride .card h3:first-letter {
-	font-weight: 900;
+	font-weight: 500;
 	color: rgb(235,105,90);
+	font-family: 'Faster One', cursive;
 }
+
 /********************MOBILE SPECIFIC**************************/
 /***************************************************top picture*/
 #podiumMobile {
