@@ -278,6 +278,7 @@ b {
 	}
 	.civil, .fund{
 		grid-column: 7 / -1;
+
 	}
 	.private {
 		grid-column: 1 / -5;
@@ -299,6 +300,9 @@ b {
 		box-shadow: 5px 5px 1rem rgb(34, 30, 88, .4);
 	}
 	/***************************h3 spacing*/
+		.civil div h3, .fund div h3{
+			justify-self: start;
+		}
 
 }
 @media only screen and (min-width: 1600px) { /*centers pictures at larger screen sizes*/
